@@ -186,82 +186,134 @@ def upsert_document_to_mongodb(document: Dict[str, Any]) -> bool:
 
 
 def process_and_upsert_batch(documents: List[Dict[str, Any]], batch_size: int = 10) -> Dict[str, int]:
-    """Process documents in batches and upsert to MongoDB with embeddings. Auto-increments question IDs."""
+    """Process documents in batches and upsert to MongoDB with embeddings. Auto-increments question IDs.
+
+    This function robustly handles cases where a document may be a list (e.g. nested arrays),
+    or otherwise malformed, by extracting the first dict found or skipping invalid entries.
+    """
     results = {"success": 0, "failed": 0, "total": len(documents)}
-    
     logger.info(f"Starting to process {len(documents)} documents in batches of {batch_size}")
-    
+
     # Auto-increment question ID counter
     question_id_counter = 1
-    
+
     for i in range(0, len(documents), batch_size):
         batch = documents[i:i + batch_size]
         logger.info(f"Processing batch {i//batch_size + 1}/{(len(documents) + batch_size - 1)//batch_size}")
-        
+
         for document in batch:
             try:
-                # Remove existing question_id and assign auto-incremented one
-                document_copy = document.copy()
-                document_copy["question_id"] = f"Q{question_id_counter}"
+                # Normalize document -> ensure we have a dict
+                normalized: Optional[Dict[str, Any]] = None
+                if isinstance(document, dict):
+                    normalized = document.copy()
+                elif isinstance(document, list):
+                    # try to find first dict inside the list
+                    for el in document:
+                        if isinstance(el, dict):
+                            normalized = el.copy()
+                            break
+                    if normalized is None:
+                        logger.warning("Skipping list-type document with no dict elements")
+                        results["failed"] += 1
+                        continue
+                else:
+                    logger.warning(f"Skipping unsupported document type: {type(document)}")
+                    results["failed"] += 1
+                    continue
+
+                # Assign auto-incremented question id (override any existing id)
+                normalized["question_id"] = f"Q{question_id_counter}"
                 question_id_counter += 1
-                
-                # Create embeddings
-                document_with_embeddings = create_embeddings_for_document(document_copy)
-                
-                # Upsert to MongoDB
+
+                # Create embeddings and upsert
+                document_with_embeddings = create_embeddings_for_document(normalized)
                 if upsert_document_to_mongodb(document_with_embeddings):
                     results["success"] += 1
                 else:
                     results["failed"] += 1
-                    
+
             except Exception as e:
-                # Use user_question for error logging
-                doc_ref = document.get("user_question", "") or f"Q{question_id_counter-1}"
-                logger.error(f"Failed to process document {str(doc_ref)[:50]}: {e}")
+                # Use normalized if available, else best-effort reference
+                doc_ref = ""
+                try:
+                    if isinstance(document, dict):
+                        doc_ref = document.get("user_question", "") or document.get("question_id", "")
+                    elif isinstance(document, list) and len(document) > 0 and isinstance(document[0], dict):
+                        doc_ref = document[0].get("user_question", "") or document[0].get("question_id", "")
+                except Exception:
+                    doc_ref = ""
+                logger.error(f"Failed to process document {str(doc_ref)[:100]}: {e}")
                 results["failed"] += 1
-    
+
     logger.info(f"Batch processing completed. Success: {results['success']}, Failed: {results['failed']}")
     return results
 
 
 def load_json_data(file_path: str) -> List[Dict[str, Any]]:
-    """Load JSON data from file, handling multiple JSON arrays."""
+    """Load JSON data from file and normalize to a flat list of dicts.
+
+    Handles:
+    - A single JSON array or object
+    - Nested arrays (flattens)
+    - Multiple JSON arrays embedded in the file (fallback using regex)
+    """
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read()
-        
-        # Split content by empty lines and try to parse each section as JSON
-        all_documents = []
-        json_sections = content.split('\n\n\n')
-        
-        for i, section in enumerate(json_sections):
-            section = section.strip()
-            if not section:
-                continue
-                
+
+        all_documents: List[Dict[str, Any]] = []
+
+        # Primary attempt: parse entire file as JSON
+        try:
+            data = json.loads(content)
+            def _flatten(item):
+                out = []
+                if isinstance(item, dict):
+                    out.append(item)
+                elif isinstance(item, list):
+                    for el in item:
+                        out.extend(_flatten(el))
+                else:
+                    # ignore non-dict/list top-level items
+                    pass
+                return out
+            all_documents = _flatten(data)
+            logger.info(f"Loaded {len(all_documents)} documents from JSON file (primary parse)")
+            return all_documents
+        except json.JSONDecodeError:
+            logger.warning("Primary JSON parse failed, attempting to extract JSON arrays/objects from file")
+
+        # Fallback: extract JSON arrays/objects using regex and parse each
+        candidates = re.findall(r'(\{.*?\}|\[.*?\])', content, re.S)
+        for i, chunk in enumerate(candidates):
             try:
-                # Try to parse this section as JSON
-                data = json.loads(section)
-                if isinstance(data, list):
-                    all_documents.extend(data)
-                    logger.info(f"Loaded {len(data)} documents from section {i+1}")
-                elif isinstance(data, dict):
-                    all_documents.append(data)
-                    logger.info(f"Loaded 1 document from section {i+1}")
-            except json.JSONDecodeError as e:
-                logger.warning(f"Skipping invalid JSON section {i+1}: {e}")
+                parsed = json.loads(chunk)
+                def _flatten_chunk(item):
+                    out = []
+                    if isinstance(item, dict):
+                        out.append(item)
+                    elif isinstance(item, list):
+                        for el in item:
+                            out.extend(_flatten_chunk(el))
+                    return out
+                flattened = _flatten_chunk(parsed)
+                if flattened:
+                    all_documents.extend(flattened)
+                    logger.info(f"Loaded {len(flattened)} documents from extracted JSON chunk {i+1}")
+            except json.JSONDecodeError:
+                logger.debug(f"Skipping invalid JSON chunk {i+1}")
                 continue
-        
-        logger.info(f"Total loaded {len(all_documents)} documents from {file_path}")
+
+        logger.info(f"Total loaded {len(all_documents)} documents from {file_path} (fallback)")
         return all_documents
-            
+
     except FileNotFoundError:
         logger.error(f"File not found: {file_path}")
         return []
     except Exception as e:
         logger.error(f"Error loading file {file_path}: {e}")
         return []
-
 
 def create_mongodb_indexes():
     """Create indexes for optimal query performance."""
