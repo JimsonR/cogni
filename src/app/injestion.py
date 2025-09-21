@@ -35,11 +35,11 @@ except Exception as e:
 # MongoDB Atlas configuration
 MONGODB_CONNECTION_STRING = os.getenv("MONGODB_CONNECTION_STRING")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "crda")
-COLLECTION_NAME = os.getenv("COLLECTION_NAME", "knowdledge_bank")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME", "knowledge_bank")
 
 # Initialize MongoDB client
 try:
-    mongo_client = MongoClient("mongodb+srv://cognivaultai_db_user:BFEpSuOj1fpjmhGn@cogni-vault.gd7fz06.mongodb.net/?retryWrites=true&w=majority&appName=cogni-vaul")
+    mongo_client = MongoClient("mongodb+srv://cognivaultai_db_user:BFEpSuOj1fpjmhGn@cogni-vault.gd7fz06.mongodb.net/?retryWrites=true&w=majority&appName=cogni-vault")
     # Test connection
     mongo_client.admin.command('ping')
     logger.info("MongoDB Atlas connection established successfully")
@@ -336,7 +336,7 @@ class MongoDBIngestion:
 def ingest_insights_from_file(insights_file_path: str = "insights.json"):
     """Standalone function to ingest insights from JSON file"""
     # MongoDB Atlas connection string
-    connection_string = "mongodb+srv://cognivaultai_db_user:BFEpSuOj1fpjmhGn@cogni-vault.gd7fz06.mongodb.net/?retryWrites=true&w=majority&appName=cogni-vault"
+    connection_string = "mongodb+srv://jyothika:Jyothika%40123@cluster.ollkbh1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
     
     try:
         # Load insights from JSON file

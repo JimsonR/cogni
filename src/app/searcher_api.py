@@ -59,7 +59,7 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME", "knowledge_bank")
 
 # Initialize MongoDB client
 try:
-    mongo_client = MongoClient("mongodb+srv://cognivaultai_db_user:BFEpSuOj1fpjmhGn@cogni-vault.gd7fz06.mongodb.net/?retryWrites=true&w=majority&appName=cogni-vaul")
+    mongo_client = MongoClient("mongodb+srv://cognivaultai_db_user:BFEpSuOj1fpjmhGn@cogni-vault.gd7fz06.mongodb.net/?retryWrites=true&w=majority&appName=cogni-vault")
     # Test connection
     mongo_client.admin.command('ping')
     logger.info("MongoDB Atlas connection established successfully")
@@ -153,13 +153,28 @@ def search_documents(query_embedding: List[float], limit: int, threshold: float)
         raise HTTPException(status_code=500, detail="MongoDB collection not available")
     
     try:
+        # First, let's check if we have documents with embeddings
+        sample_doc = collection.find_one({"question_embedding": {"$exists": True, "$ne": None}})
+        if not sample_doc:
+            logger.warning("No documents found with question_embedding field!")
+            # Let's check what documents exist
+            total_docs = collection.count_documents({})
+            logger.info(f"Total documents in collection: {total_docs}")
+            if total_docs > 0:
+                sample = collection.find_one()
+                logger.info(f"Sample document fields: {list(sample.keys()) if sample else 'None'}")
+        else:
+            logger.info(f"Found document with embedding. Sample fields: {list(sample_doc.keys())}")
+            embedding_length = len(sample_doc.get("question_embedding", []))
+            logger.info(f"Embedding vector length: {embedding_length}")
+        
         # MongoDB Atlas Vector Search aggregation pipeline
         pipeline = [
             {
                 "$vectorSearch": {
                     "queryVector": query_embedding,
                     "path": "question_embedding",
-                    "numCandidates": 100,
+                    "numCandidates": 10000,
                     "index": "questions_index",
                     "limit": limit
                 }
@@ -168,8 +183,19 @@ def search_documents(query_embedding: List[float], limit: int, threshold: float)
                 "$addFields": {
                     "similarity_score": {"$meta": "vectorSearchScore"}
                 }
+            },
+            {
+                '$project': {
+                    'user_question': 1,
+                    'detailed_answer': 1,
+                    'follow_up_questions.question': 1,
+                    'similarity_score': 1,
+
+                }
             }
         ]
+        
+        logger.info(f"Executing vector search with query embedding length: {len(query_embedding)}")
         raw = list(collection.aggregate(pipeline))
         logger.info(f"Vector search returned {len(raw)} raw results")
         
@@ -178,17 +204,25 @@ def search_documents(query_embedding: List[float], limit: int, threshold: float)
             logger.info(f"Sample result keys: {list(raw[0].keys())}")
             if 'similarity_score' in raw[0]:
                 logger.info(f"Sample similarity_score: {raw[0]['similarity_score']}")
+        else:
+            logger.warning("Vector search returned no results - this might indicate an index issue")
 
         # Filter by threshold and prepare results
         results = []
         for doc in raw:
-            score = doc.get("similarity_score")
+            # Clean up any MongoDB-specific underscore fields that might cause Pydantic issues
+            cleaned_doc = {}
+            for key, value in doc.items():
+                if not key.startswith('__'):  # Skip fields with double underscores
+                    cleaned_doc[key] = value
+            
+            score = cleaned_doc.get("similarity_score")
             if score is not None and score >= threshold:
-                results.append(doc)
+                results.append(cleaned_doc)
             elif threshold <= 0:
                 # If threshold is 0 or negative, include all results
-                doc["similarity_score"] = score if score is not None else 0.0
-                results.append(doc)
+                cleaned_doc["similarity_score"] = score if score is not None else 0.0
+                results.append(cleaned_doc)
         
         logger.info(f"After threshold filtering ({threshold}): {len(results)} results")
         return results
@@ -215,8 +249,13 @@ def search_documents_fallback(query_embedding: List[float], limit: int, threshol
             if "question_embedding" in doc and doc["question_embedding"]:
                 similarity = cosine_similarity(query_embedding, doc["question_embedding"])
                 if similarity >= threshold:
-                    doc["similarity_score"] = similarity
-                    scored_documents.append(doc)
+                    # Clean up any problematic underscore fields
+                    cleaned_doc = {}
+                    for key, value in doc.items():
+                        if not key.startswith('__'):  # Skip fields with double underscores
+                            cleaned_doc[key] = value
+                    cleaned_doc["similarity_score"] = similarity
+                    scored_documents.append(cleaned_doc)
         
         # Sort by similarity score (highest first) and limit results
         scored_documents.sort(key=lambda x: x["similarity_score"], reverse=True)
@@ -247,8 +286,43 @@ async def health_check():
     }
 
 
+@app.get("/debug/collection-info")
+async def debug_collection_info():
+    """Debug endpoint to check collection state."""
+    if collection is None:
+        raise HTTPException(status_code=500, detail="MongoDB collection not available")
+    
+    try:
+        # Count total documents
+        total_docs = collection.count_documents({})
+        
+        # Count documents with embeddings
+        docs_with_embeddings = collection.count_documents({"question_embedding": {"$exists": True, "$ne": None}})
+        
+        # Get a sample document
+        sample_doc = collection.find_one()
+        sample_fields = list(sample_doc.keys()) if sample_doc else []
+        
+        # Check if we have embedding field in sample
+        has_embedding = "question_embedding" in sample_fields if sample_doc else False
+        embedding_length = len(sample_doc.get("question_embedding", [])) if sample_doc and has_embedding else 0
+        
+        return {
+            "total_documents": total_docs,
+            "documents_with_embeddings": docs_with_embeddings,
+            "sample_document_fields": sample_fields,
+            "has_embedding_field": has_embedding,
+            "embedding_vector_length": embedding_length,
+            "database": DATABASE_NAME,
+            "collection": COLLECTION_NAME
+        }
+    except Exception as e:
+        logger.error(f"Error getting collection info: {e}")
+        raise HTTPException(status_code=500, detail=f"Error checking collection: {str(e)}")
+
+
 @app.post("/search")
-async def vector_search(request: SearchRequest):
+async def search_questions(request: SearchRequest) -> Dict[str, Any]:
     """Perform semantic vector search on the Q&A collection."""
     start_time = datetime.now()
     
@@ -286,21 +360,26 @@ async def vector_search(request: SearchRequest):
                     logger.warning(f"No answer found for document {doc.get('_id')}. Available fields: {list(doc.keys())}")
                 
                 # Safely extract follow-up questions, handling different formats
-                follow_ups = doc.get("follow_up_questions_and_answers")
-                if not follow_ups:
-                    follow_ups = doc.get("follow_up_questions")
+                # follow_ups = doc.get("follow_up_questions_and_answers")
+                # if not follow_ups:
+                follow_ups = doc.get("follow_up_questions")
                 
-                # Create result as plain dictionary
+                # Create result as plain dictionary with safe field handling
                 result_data = {
                     "id": str(doc["_id"]),
                     "question": question,
                     "answer": answer,
-                    "similarity_score": round(float(doc["similarity_score"]), 4),
-                    "follow_up_questions_and_answers": follow_ups,
+                    "similarity_score": round(float(doc.get("similarity_score", 0.0)), 4),
+                    "follow_up_questions": follow_ups,
                     "question_embedding": doc.get("question_embedding") if request.include_embeddings else None,
                     "created_at": str(doc.get("created_at")) if doc.get("created_at") else None,
                     "updated_at": str(doc.get("updated_at")) if doc.get("updated_at") else None
                 }
+                
+                # Remove any MongoDB-specific fields that might cause issues
+                for key in list(result_data.keys()):
+                    if key.startswith('_') and key != 'id':
+                        del result_data[key]
                 
                 results.append(result_data)
                 
@@ -373,7 +452,7 @@ async def vector_search_get(
         threshold=threshold,
         include_embeddings=include_embeddings
     )
-    return await vector_search(request)
+    return await search_questions(request)
 
 
 # Insights API endpoints
