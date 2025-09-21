@@ -14,6 +14,8 @@ from pymongo.errors import PyMongoError
 from openai import AzureOpenAI
 from dotenv import load_dotenv
 import json
+import redis  # ADD
+import uuid   # ADD
 
 # Load environment variables
 load_dotenv()
@@ -575,6 +577,357 @@ async def root():
         }
     }
 
+
+# === Redis Config & Chat History Support (ADD) ===
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
+REDIS_PASSWORD = os.getenv("REDIS_PASSWORD") or None
+REDIS_DB = int(os.getenv("REDIS_DB", 0))
+CHAT_TTL_SECONDS = int(os.getenv("CHAT_HISTORY_TTL", "3600"))
+MAX_CHAT_MESSAGES = int(os.getenv("MAX_CHAT_MESSAGES", "40"))
+
+redis_client = None
+try:
+    redis_client = redis.Redis(
+        host=REDIS_HOST,
+        port=REDIS_PORT,
+        password=REDIS_PASSWORD,
+        db=REDIS_DB,
+        decode_responses=True,
+        socket_connect_timeout=3,
+        socket_timeout=3,
+    )
+    redis_client.ping()
+    logger.info("Redis connected")
+except Exception as e:
+    logger.warning(f"Redis unavailable ({e}); chat history disabled")
+
+# === Chat Models (ADD) ===
+class ChatSearchRequest(BaseModel):
+    query: str = Field(..., description="User query")
+    limit: int = Field(1, ge=1, le=10)
+    threshold: float = Field(0.7, ge=0.0, le=1.0)
+    session_id: Optional[str] = Field(None, description="Existing session id to preserve context")
+    include_embeddings: bool = False
+
+class ChatSearchResponse(BaseModel):
+    session_id: str
+    query: str
+    answer: str
+    sources: List[Dict[str, Any]]
+    total_sources: int
+    used_threshold: float
+    prompt_tokens_est: int
+    similarity_threshold_applied: bool
+    created_at: str
+
+# Chat message models (ensure defined once)
+class ChatMessage(BaseModel):
+    role: str
+    content: str
+
+class ChatHistoryResponse(BaseModel):
+    session_id: str
+    messages: List[ChatMessage]
+    total_messages: int
+
+
+# === Chat History Helpers (ADD) ===
+def _chat_key(session_id: str) -> str:
+    return f"chat:{session_id}"
+
+def _new_session_id() -> str:
+    return f"sess_{uuid.uuid4().hex[:12]}"
+
+def load_chat_history(session_id: str) -> List[Dict[str, str]]:
+    if not redis_client:
+        return []
+    raw = redis_client.get(_chat_key(session_id))
+    if not raw:
+        return []
+    try:
+        data = json.loads(raw)
+        return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+def save_chat_history(session_id: str, history: List[Dict[str, str]]):
+    if not redis_client:
+        return
+    trimmed = history[-MAX_CHAT_MESSAGES:]
+    redis_client.setex(_chat_key(session_id), CHAT_TTL_SECONDS, json.dumps(trimmed))
+
+def append_chat_message(session_id: str, role: str, content: str):
+    history = load_chat_history(session_id)
+    history.append({"role": role, "content": content})
+    save_chat_history(session_id, history)
+    return history
+
+def build_context(query: str, docs: List[Dict[str, Any]], history: List[Dict[str, str]]) -> str:
+    # Use only the last 5 chronological messages (any role) for context
+    if history:
+        recent = history[-5:]
+    else:
+        recent = []
+    history_block = ""
+    if recent:
+        parts = []
+        for m in recent:
+            label = "USER" if m["role"] == "user" else "ASSISTANT"
+            parts.append(f"{label}: {m['content']}")
+        history_block = "\n--- Recent Conversation (last 5 messages) ---\n" + "\n".join(parts)
+
+    sources_block = "\n--- Retrieved Sources ---\n"
+    for i, d in enumerate(docs, 1):
+        q = d.get("user_question") or ""
+        a = d.get("detailed_answer") or d.get("answer") or ""
+        score = d.get("similarity_score", 0.0)
+        sources_block += f"[S{i}] Question: {q}\nAnswer: {a}\nScore: {score:.4f}\n\n"
+
+    prompt = f"""You are a careful assistant. Answer ONLY with facts supported by the retrieved sources.
+If a point is not supported, say you lack enough information.
+Cite supporting sentences inline using bracketed citations like [S1], [S2].
+If multiple sources support one sentence, combine: [S1,S2].
+Be concise. Provide direct answer first, then (if helpful) a short bullet list.
+
+User Query: {query}
+{history_block}
+{sources_block}
+Rules:
+- Do not fabricate.
+- If insufficient data, clearly state missing info and suggest what is needed next.
+- Keep answer <= 180 words unless absolutely necessary.
+Begin answer below:
+"""
+    return prompt
+
+# === AI Answer Generation (ADD) ===
+def generate_ai_answer(prompt: str) -> str:
+    if client is None or not deployment:
+        return "LLM unavailable."
+    try:
+        # Azure OpenAI chat completions (client already set)
+        resp = client.chat.completions.create(
+            model=deployment,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.2,
+            max_tokens=800
+        )
+        return resp.choices[0].message.content.strip()
+    except Exception as e:
+        logger.error(f"LLM generation error: {e}")
+        return "Error generating answer."
+
+# === New Endpoint: Chat + AI Response (ADD) ===
+@app.post("/chat/search", response_model=ChatSearchResponse)
+async def chat_search(req: ChatSearchRequest):
+    if collection is None:
+        raise HTTPException(status_code=500, detail="Database unavailable")
+    if client is None:
+        raise HTTPException(status_code=500, detail="Embedding/LLM client unavailable")
+
+    session_id = req.session_id or _new_session_id()
+
+    # Embed and search
+    try:
+        query_embedding = get_openai_embedding(req.query)
+    except Exception as e:
+        logger.error(f"Embedding error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to embed query")
+
+    raw_docs = search_documents(query_embedding, req.limit, req.threshold)
+
+    # Guarantee we have docs for context (fallback with threshold 0 if empty)
+    docs_for_context = raw_docs
+    similarity_threshold_applied = True
+    if not docs_for_context:
+        # widen
+        similarity_threshold_applied = False
+        wider = search_documents(query_embedding, req.limit, 0.0)
+        docs_for_context = wider[:req.limit]
+
+    # Append user message
+    append_chat_message(session_id, "user", req.query)
+    history = load_chat_history(session_id)
+
+    prompt = build_context(req.query, docs_for_context, history)
+    answer = generate_ai_answer(prompt)
+
+    # Append assistant message
+    append_chat_message(session_id, "assistant", answer)
+
+    est_tokens = int(len(prompt) / 4)  # crude estimate
+
+    # Prepare slim sources
+    sources = []
+    for d in docs_for_context:
+        sources.append({
+            "question": d.get("user_question"),
+            "answer": d.get("detailed_answer") or d.get("answer"),
+            "similarity_score": round(float(d.get("similarity_score", 0.0)), 4),
+            "follow_up_questions": d.get("follow_up_questions", [])
+        })
+
+    return ChatSearchResponse(
+        session_id=session_id,
+        query=req.query,
+        answer=answer,
+        sources=sources,
+        total_sources=len(sources),
+        used_threshold=req.threshold,
+        prompt_tokens_est=est_tokens,
+        similarity_threshold_applied=similarity_threshold_applied,
+        created_at=datetime.utcnow().isoformat()
+    )
+
+
+# === Session Management Endpoints (ADD) ===
+
+class SessionCreateResponse(BaseModel):
+    session_id: str
+    created_at: str
+    ttl_seconds: int
+
+class SessionListItem(BaseModel):
+    session_id: str
+    message_count: int
+    last_activity: Optional[str] = None
+    ttl_remaining: Optional[int] = None
+
+class SessionListResponse(BaseModel):
+    sessions: List[SessionListItem]
+    total: int
+
+class SessionDeleteResponse(BaseModel):
+    session_id: str
+    deleted: bool
+
+class SessionPruneResponse(BaseModel):
+    pruned: int
+    remaining: int
+
+
+def _list_session_keys(pattern: str = 'chat:*') -> List[str]:
+    if not redis_client:
+        return []
+    try:
+        # Use SCAN to avoid blocking
+        cursor = 0
+        keys_accum = []
+        while True:
+            cursor, keys = redis_client.scan(cursor=cursor, match=pattern, count=100)
+            keys_accum.extend(keys)
+            if cursor == 0:
+                break
+            if len(keys_accum) > 1000:  # safety cap
+                break
+        return keys_accum
+    except Exception as e:
+        logger.error(f"Error scanning redis keys: {e}")
+        return []
+
+
+def _session_id_from_key(key: str) -> str:
+    return key.split(':', 1)[1] if ':' in key else key
+
+
+@app.post('/sessions', response_model=SessionCreateResponse)
+async def create_session():
+    """Create a new chat session and return its ID."""
+    if not redis_client:
+        raise HTTPException(status_code=503, detail='Redis not available')
+    session_id = _new_session_id()
+    # initialize empty history
+    save_chat_history(session_id, [])
+    return SessionCreateResponse(session_id=session_id, created_at=datetime.utcnow().isoformat(), ttl_seconds=CHAT_TTL_SECONDS)
+
+
+@app.get('/sessions', response_model=SessionListResponse)
+async def list_sessions():
+    """List active chat sessions with metadata."""
+    keys = _list_session_keys()
+    sessions: List[SessionListItem] = []
+    for key in keys:
+        session_id = _session_id_from_key(key)
+        history = load_chat_history(session_id)
+        # TTL
+        ttl_remaining = None
+        try:
+            ttl_remaining = redis_client.ttl(key) if redis_client else None
+        except Exception:
+            ttl_remaining = None
+        last_activity = None
+        if history:
+            # last assistant or user message
+            last_activity = datetime.utcnow().isoformat()
+        sessions.append(SessionListItem(session_id=session_id, message_count=len(history), last_activity=last_activity, ttl_remaining=ttl_remaining))
+    return SessionListResponse(sessions=sessions, total=len(sessions))
+
+
+@app.get('/sessions/{session_id}', response_model=ChatHistoryResponse)
+async def get_session(session_id: str):
+    """Return full chat history for a session."""
+    if not redis_client:
+        raise HTTPException(status_code=503, detail='Redis not available')
+    history_msgs = load_chat_history(session_id)
+    # Reuse existing ChatMessage model if defined earlier
+    chat_messages = []
+    for m in history_msgs:
+        try:
+            chat_messages.append(ChatMessage(role=m['role'], content=m['content']))
+        except Exception:
+            continue
+    return ChatHistoryResponse(session_id=session_id, messages=chat_messages, total_messages=len(chat_messages))
+
+
+@app.delete('/sessions/{session_id}', response_model=SessionDeleteResponse)
+async def delete_session(session_id: str):
+    """Delete a chat session and its history."""
+    if not redis_client:
+        raise HTTPException(status_code=503, detail='Redis not available')
+    key = _chat_key(session_id)
+    deleted = False
+    try:
+        res = redis_client.delete(key)
+        deleted = res == 1
+    except Exception as e:
+        logger.error(f"Delete session error: {e}")
+    return SessionDeleteResponse(session_id=session_id, deleted=deleted)
+
+
+@app.post('/sessions/{session_id}/touch')
+async def touch_session(session_id: str):
+    """Refresh TTL for a session without modifying contents."""
+    if not redis_client:
+        raise HTTPException(status_code=503, detail='Redis not available')
+    key = _chat_key(session_id)
+    if not redis_client.get(key):
+        raise HTTPException(status_code=404, detail='Session not found')
+    try:
+        redis_client.expire(key, CHAT_TTL_SECONDS)
+    except Exception as e:
+        logger.error(f"Touch session error: {e}")
+        raise HTTPException(status_code=500, detail='Failed to refresh session TTL')
+    return {"session_id": session_id, "ttl_seconds": CHAT_TTL_SECONDS, "refreshed_at": datetime.utcnow().isoformat()}
+
+
+@app.post('/sessions/prune', response_model=SessionPruneResponse)
+async def prune_sessions(min_ttl: int = 0):
+    """Delete sessions that are about to expire (TTL <= min_ttl)."""
+    if not redis_client:
+        raise HTTPException(status_code=503, detail='Redis not available')
+    keys = _list_session_keys()
+    pruned = 0
+    for key in keys:
+        try:
+            ttl_remaining = redis_client.ttl(key)
+            if ttl_remaining != -1 and ttl_remaining <= min_ttl:
+                redis_client.delete(key)
+                pruned += 1
+        except Exception:
+            continue
+    remaining = len(_list_session_keys())
+    return SessionPruneResponse(pruned=pruned, remaining=remaining)
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))

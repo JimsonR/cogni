@@ -445,6 +445,8 @@ def main():
         logger.info("MongoDB connection closed")
 
 
+
+
 if __name__ == "__main__":
     # Check command line arguments for different ingestion modes
     if len(sys.argv) > 1:
