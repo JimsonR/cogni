@@ -1008,6 +1008,7 @@ async def prune_sessions(min_ttl: int = 0):
 
 class QuestionRequest(BaseModel):
     question: str = Field(..., description="Exact question text to match against user_question")
+    session_id: Optional[str] = Field(None, description="Optional session id for context")
 
 class QuestionAnswerResponse(BaseModel):
     # question: str
@@ -1029,9 +1030,18 @@ async def get_answer_for_question(payload: QuestionRequest):
         ]
         docs = list(collection.aggregate(pipeline))
         if not docs:
+            # If session_id provided, still log the user question with no answer
+            if payload.session_id and redis_client:
+                append_chat_message(payload.session_id, "user", q)
+                append_chat_message(payload.session_id, "assistant", "No stored answer found for that question.")
             return QuestionAnswerResponse(answer=None, found=False)
         doc = docs[0]
-        return QuestionAnswerResponse(answer=doc.get("detailed_answer"), found=True)
+        answer = doc.get("detailed_answer")
+        # If session tracking requested, log to chat history
+        if payload.session_id and redis_client:
+            append_chat_message(payload.session_id, "user", q)
+            append_chat_message(payload.session_id, "assistant", answer or "")
+        return QuestionAnswerResponse(answer=answer, found=True)
     except Exception as e:
         logger.error(f"Error fetching answer for question: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch answer")
