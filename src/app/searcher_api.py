@@ -466,10 +466,16 @@ async def get_all_insights():
     
     try:
         insights = list(insights_collection.find({}))
+        filtered = []
         # Convert ObjectId to string for JSON serialization
         for insight in insights:
+            
             insight["_id"] = str(insight["_id"])
-        return {"insights": insights, "count": len(insights)}
+            filtered.append({
+                "id": insight.get("_id"),
+                "insight": insight.get("insight")
+            })
+        return {"insights": filtered, "count": len(filtered)}
     except Exception as e:
         logger.error(f"Error fetching insights: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch insights")
@@ -928,6 +934,107 @@ async def prune_sessions(min_ttl: int = 0):
             continue
     remaining = len(_list_session_keys())
     return SessionPruneResponse(pruned=pruned, remaining=remaining)
+
+
+# class FollowUpRequest(BaseModel):
+#     question: str = Field(..., description="Exact follow-up question text or main question")
+
+# class FollowUpResponse(BaseModel):
+#     query: str
+#     type: str
+#     answer: Optional[str] = None
+#     parent_question: Optional[str] = None
+#     question: Optional[str] = None
+#     follow_up_count: Optional[int] = None
+#     message: Optional[str] = None
+
+
+# @app.post("/followup/answer", response_model=FollowUpResponse)
+# async def get_answer_by_followup(body: FollowUpRequest):
+#     q = body.question
+#     if collection is None:
+#         raise HTTPException(status_code=500, detail="MongoDB collection not available")
+#     if not q.strip():
+#         raise HTTPException(status_code=400, detail="Question must not be empty")
+
+#     try:
+#         pipeline_follow = [
+#             {"$match": {"follow_up_questions.question": q}},
+#             {"$limit": 1},
+#             {"$project": {"detailed_answer": 1}}
+#         ]
+#         docs = list(collection.aggregate(pipeline_follow))
+
+#         matched_follow_answer = None
+#         parent_question = None
+#         if docs:
+#             for fu in docs[0].get("follow_up_questions", []):
+#                 if isinstance(fu, dict) and fu.get("question") == q:
+#                     matched_follow_answer = fu.get("answer") or fu.get("detailed_answer")
+#                     parent_question = docs[0].get("user_question")
+#                     break
+
+#         if matched_follow_answer is None:
+#             pipeline_main = [
+#                 {"$match": {"user_question": q}},
+#                 {"$limit": 1},
+#                 {"$project": {"user_question": 1, "detailed_answer": 1, "follow_up_questions": 1}}
+#             ]
+#             main_docs = list(collection.aggregate(pipeline_main))
+#             if main_docs:
+#                 parent_question = main_docs[0].get("user_question")
+#                 matched_follow_answer = main_docs[0].get("detailed_answer")
+#                 return FollowUpResponse(
+#                     query=q,
+#                     type="main_question",
+#                     question=parent_question,
+#                     answer=matched_follow_answer,
+#                     follow_up_count=len(main_docs[0].get("follow_up_questions", []))
+#                 )
+
+#         if matched_follow_answer is not None:
+#             return FollowUpResponse(
+#                 query=q,
+#                 type="follow_up",
+#                 parent_question=parent_question,
+#                 answer=matched_follow_answer
+#             )
+
+#         return FollowUpResponse(query=q, type="not_found", message="No matching follow-up or main question found")
+
+#     except Exception as e:
+#         logger.error(f"Follow-up answer lookup error: {e}")
+#         raise HTTPException(status_code=500, detail="Failed to fetch answer for follow-up question")
+
+class QuestionRequest(BaseModel):
+    question: str = Field(..., description="Exact question text to match against user_question")
+
+class QuestionAnswerResponse(BaseModel):
+    # question: str
+    answer: Optional[str]
+    found: bool
+
+@app.post("/followup/answer", response_model=QuestionAnswerResponse)
+async def get_answer_for_question(payload: QuestionRequest):
+    if collection is None:
+        raise HTTPException(status_code=500, detail="MongoDB collection not available")
+    q = payload.question.strip()
+    if not q:
+        raise HTTPException(status_code=400, detail="Question must not be empty")
+    try:
+        pipeline = [
+            {"$match": {"user_question": q}},
+            {"$limit": 1},
+            {"$project": {"detailed_answer": 1}}
+        ]
+        docs = list(collection.aggregate(pipeline))
+        if not docs:
+            return QuestionAnswerResponse(answer=None, found=False)
+        doc = docs[0]
+        return QuestionAnswerResponse(answer=doc.get("detailed_answer"), found=True)
+    except Exception as e:
+        logger.error(f"Error fetching answer for question: {e}")
+        raise HTTPException(status_code=500, detail="Failed to fetch answer")
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))
