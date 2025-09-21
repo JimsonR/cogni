@@ -1,0 +1,192 @@
+[
+  {
+    "question_id": "Q51",
+    "user_question": "What were the primary topics and decisions made during the project kickoff meeting on January 15, 2025?",
+    "detailed_answer": "The main topics were the project scope, which is the 'Roads & Infrastructure for Zone 1A' project over 36 months, the financial structure (10% advance, milestone-based payments), and key legal clauses, including a penalty for delays.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q51_F1",
+        "question": "What was the legal penalty for project delays?"
+      },
+      {
+        "follow_up_id": "Q51_F2",
+        "question": "What was the contractor's main request at the meeting?"
+      },
+      {
+        "follow_up_id": "Q51_F3",
+        "question": "What was the first action item for the CRDA's Finance team?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q52",
+    "user_question": "How did the project's progress stand as of the July 20, 2025 technical review meeting?",
+    "detailed_answer": "The contractor reported 15% progress, which was 30 days behind schedule due to monsoon rains. The contractor requested a schedule extension.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q52_F1",
+        "question": "What was the technical suggestion to help the project recover the delay?"
+      },
+      {
+        "follow_up_id": "Q52_F2",
+        "question": "What environmental concern was raised?"
+      },
+      {
+        "follow_up_id": "Q52_F3",
+        "question": "What was the next step for the contractor after the review?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q53",
+    "user_question": "What new risk was identified during the finance and risk review on December 10, 2025?",
+    "detailed_answer": "A new risk of 'contractor over-dependence' was identified. The Legal Advisor noted that the contractor, XYZ Infra, held three other contracts with CRDA, raising concerns about potential over-commitment.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q53_F1",
+        "question": "What specific action was taken to manage this risk?"
+      },
+      {
+        "follow_up_id": "Q53_F2",
+        "question": "What did the Commissioner state regarding project timelines?"
+      },
+      {
+        "follow_up_id": "Q53_F3",
+        "question": "What milestone was achieved by the contractor at this point?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q54",
+    "user_question": "What was the payment process for the Phase 1 milestone?",
+    "detailed_answer": "The Finance Officer recommended releasing the 20% milestone payment only after a third-party quality report was verified.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q54_F1",
+        "question": "When was the third-party quality report due?"
+      },
+      {
+        "follow_up_id": "Q54_F2",
+        "question": "Who was responsible for processing the payment?"
+      },
+      {
+        "follow_up_id": "Q54_F3",
+        "question": "What does this payment process indicate about the project's quality control?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q55",
+    "user_question": "What was the contractor's first major deliverable after the kickoff meeting and what was its due date?",
+    "detailed_answer": "The contractor's first major deliverable was to share a detailed execution plan by February 10, 2025.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q55_F1",
+        "question": "What information did the contractor need to receive before submitting the plan?"
+      },
+      {
+        "follow_up_id": "Q55_F2",
+        "question": "What was the overall project duration?"
+      },
+      {
+        "follow_up_id": "Q55_F3",
+        "question": "What was the project named?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q56",
+    "user_question": "What were the roles of the Chief Engineer and Finance Officer in the first meeting?",
+    "detailed_answer": "The Chief Engineer reviewed the scope of the project, while the Finance Officer confirmed the payment structure, including the 10% advance and milestone-based disbursements.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q56_F1",
+        "question": "Who chaired the kickoff meeting?"
+      },
+      {
+        "follow_up_id": "Q56_F2",
+        "question": "What did the Commissioner emphasize?"
+      },
+      {
+        "follow_up_id": "Q56_F3",
+        "question": "What was the purpose of the Legal Advisor's presence?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q57",
+    "user_question": "What was the specific action item for the Environmental Officer?",
+    "detailed_answer": "The Environmental Officer was tasked with conducting a compliance audit by August 15, 2025, after flagging the need for dust suppression.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q57_F1",
+        "question": "What type of pollution was the main concern?"
+      },
+      {
+        "follow_up_id": "Q57_F2",
+        "question": "Was the audit a part of a larger plan?"
+      },
+      {
+        "follow_up_id": "Q57_F3",
+        "question": "What was the status of the project at the time of the audit's scheduling?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q58",
+    "user_question": "What was the status of the contractor's request for an extension and when was the decision expected?",
+    "detailed_answer": "The contractor requested an extension for the 30-day delay caused by monsoon rains, and the CRDA decided to make a decision on the request in the next meeting.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q58_F1",
+        "question": "What was the reason for the delay?"
+      },
+      {
+        "follow_up_id": "Q58_F2",
+        "question": "Did the contractor provide a plan to mitigate the delay?"
+      },
+      {
+        "follow_up_id": "Q58_F3",
+        "question": "What was the project's progress at the time of this request?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q59",
+    "user_question": "What was the purpose of the third-party quality report and when was it due?",
+    "detailed_answer": "The third-party quality report was required to verify the quality of the completed Phase 1 milestone before the 20% milestone payment could be released. It was due by December 20, 2025.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q59_F1",
+        "question": "What happens after the report is submitted?"
+      },
+      {
+        "follow_up_id": "Q59_F2",
+        "question": "What does this show about the project management style?"
+      },
+      {
+        "follow_up_id": "Q59_F3",
+        "question": "What was the role of the Finance Officer?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q60",
+    "user_question": "What was the final outcome of the December 10, 2025 meeting?",
+    "detailed_answer": "The meeting resulted in a conditional approval of the milestone payment, the identification of a new risk of 'contractor over-dependence,' and a strict directive from the Commissioner on project timelines and penalties.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q60_F1",
+        "question": "What was the date of the next scheduled review?"
+      },
+      {
+        "follow_up_id": "Q60_F2",
+        "question": "What was the main action item for the project team?"
+      },
+      {
+        "follow_up_id": "Q60_F3",
+        "question": "What did the Commissioner's directive imply?"
+      }
+    ]
+  }
+]

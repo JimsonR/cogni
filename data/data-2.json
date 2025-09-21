@@ -1,0 +1,2486 @@
+[
+  {
+    "question_id": "Q1",
+    "user_question": "What is the definition of 'in writing' in this bidding document?",
+    "answer": "Throughout the bidding document, the term 'in writing' means communicated in written form (e.g. by mail, e-mail, fax, including, if specified in the BDS, distributed or received through electronic-procurement system used by the Employer) with proof of receipt.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q1_F1",
+        "question": "What happens if a bidder is found to have a conflict of interest?"
+      },
+      {
+        "follow_up_id": "Q1_F2",
+        "question": "How long must my bid remain valid?"
+      },
+      {
+        "follow_up_id": "Q1_F3",
+        "question": "What are the acceptable forms of Bid Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q2",
+    "user_question": "What happens if a bidder is found to have a conflict of interest?",
+    "answer": "Any Bidder found to have a conflict of interest shall be disqualified. A conflict of interest is defined as a Bidder directly or indirectly controlling or being controlled by another Bidder, having the same legal representative, or having a relationship that could influence the bid or the Employer's decisions.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q2_F1",
+        "question": "What are the grounds for the forfeiture of a Bid Security?"
+      },
+      {
+        "follow_up_id": "Q2_F2",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      },
+      {
+        "follow_up_id": "Q2_F3",
+        "question": "What is a 'Bill of Quantities'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q3",
+    "user_question": "How long must my bid remain valid?",
+    "answer": "Bids must remain valid for the period specified in the BDS after the bid submission deadline date prescribed by the Employer. A bid valid for a shorter period shall be rejected as non-responsive. The Employer may request Bidders to extend the validity period in exceptional circumstances.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q3_F1",
+        "question": "What is a 'Letter of Acceptance'?"
+      },
+      {
+        "follow_up_id": "Q3_F2",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q3_F3",
+        "question": "What is the purpose of the 'Performance Security'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q4",
+    "user_question": "What are the acceptable forms of Bid Security?",
+    "answer": "The Bid Security, if specified, shall be a demand guarantee in one of the following forms: online through the E-Procurement portal, an unconditional irrevocable guarantee issued by a bank or financial institution, or an Insurance Surety Bond.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q4_F1",
+        "question": "What is a 'Bill of Quantities'?"
+      },
+      {
+        "follow_up_id": "Q4_F2",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      },
+      {
+        "follow_up_id": "Q4_F3",
+        "question": "How long must my bid remain valid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q5",
+    "user_question": "What are the grounds for the forfeiture of a Bid Security?",
+    "answer": "The Bid Security may be forfeited if a bidder withdraws, modifies, or substitutes its bid during the period of bid validity or any extension thereto. It may also be forfeited if the successful bidder fails to sign the Contract or furnish a performance security. Additionally, it can be forfeited in cases of false information, missing original hard copies, or a mismatch between original and scanned certificates.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q5_F1",
+        "question": "Can I submit a conditional bid?"
+      },
+      {
+        "follow_up_id": "Q5_F2",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q5_F3",
+        "question": "What are the common sections of a bidding document?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q6",
+    "user_question": "What is the purpose of the 'Works Requirements' section?",
+    "answer": "The bidding document for the provision of Works is specified in Section VI: Works' Requirements. This section contains the detailed technical specifications and other information that describe the work to be performed. The Bill of Quantities for the works is annexed at Schedule - A and accompanies the tender document as Part II: Works' requirements.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q6_F1",
+        "question": "What is a 'Bid Form'?"
+      },
+      {
+        "follow_up_id": "Q6_F2",
+        "question": "What happens if there is an error in a bid submission?"
+      },
+      {
+        "follow_up_id": "Q6_F3",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q7",
+    "user_question": "What is a 'Bill of Quantities'?",
+    "answer": "The Bill of Quantities (BOQ) is annexed at Schedule - A and accompanies the tender document as Part II: Works' requirements. It is a document that contains not only the quantities but also the rates worked out by the employer and the amount for each item and total value of the estimated contract.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q7_F1",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q7_F2",
+        "question": "What is a 'Letter of Acceptance'?"
+      },
+      {
+        "follow_up_id": "Q7_F3",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q8",
+    "user_question": "How long must bids remain valid?",
+    "answer": "Bids must remain valid for the period specified in the Bid Data Sheet (BDS) after the bid submission deadline date prescribed by the Employer. A bid valid for a shorter period will be rejected as non-responsive.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q8_F1",
+        "question": "What is the purpose of the 'Performance Security'?"
+      },
+      {
+        "follow_up_id": "Q8_F2",
+        "question": "How much is the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q8_F3",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q9",
+    "user_question": "What is a 'Letter of Acceptance'?",
+    "answer": "The 'Letter of Acceptance' is the notification of award that the Employer sends to the successful Bidder. It specifies the sum the Employer will pay the contractor. This notification constitutes a binding contract until a formal one is executed.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q9_F1",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q9_F2",
+        "question": "Can I submit a conditional bid?"
+      },
+      {
+        "follow_up_id": "Q9_F3",
+        "question": "Who will pay for the cost of bidding?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "user_question": "What happens after receiving the Letter of Acceptance?",
+    "answer": "The successful Bidder shall sign, date and return the Contract Agreement to the Employer within Fourteen (14) days of its receipt.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q10_F1",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q10_F2",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      },
+      {
+        "follow_up_id": "Q10_F3",
+        "question": "What does 'post-qualification' mean?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q11",
+    "user_question": "What is the purpose of the 'Performance Security'?",
+    "answer": "The Performance Security is required to ensure the successful bidder fulfills their obligations during the construction period.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q11_F1",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q11_F2",
+        "question": "What is the definition of 'in writing' in this bidding document?"
+      },
+      {
+        "follow_up_id": "Q11_F3",
+        "question": "What happens if a bidder is found to have a conflict of interest?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q12",
+    "user_question": "How much is the Performance Security?",
+    "answer": "The Performance Security must be an amount equal to 2.5% of the bid amount or contract value.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q12_F1",
+        "question": "How long must my bid remain valid?"
+      },
+      {
+        "follow_up_id": "Q12_F2",
+        "question": "What are the acceptable forms of Bid Security?"
+      },
+      {
+        "follow_up_id": "Q12_F3",
+        "question": "What are the grounds for the forfeiture of a Bid Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q13",
+    "user_question": "What happens if a bidder fails to provide the Performance Security?",
+    "answer": "Failure to submit the Performance Security will lead to the annulment of the contract award and forfeiture of the Bid Security.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q13_F1",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      },
+      {
+        "follow_up_id": "Q13_F2",
+        "question": "What is a 'Bill of Quantities'?"
+      },
+      {
+        "follow_up_id": "Q13_F3",
+        "question": "How long must bids remain valid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q14",
+    "user_question": "How long is the Performance Security valid?",
+    "answer": "The Performance Security must be valid until 60 days after the completion of the DLP (Defect Liability Period).",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q14_F1",
+        "question": "What is a 'Letter of Acceptance'?"
+      },
+      {
+        "follow_up_id": "Q14_F2",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q14_F3",
+        "question": "What is the purpose of the 'Performance Security'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q15",
+    "user_question": "Can I submit a conditional bid?",
+    "answer": "The document states that a bid should be substantially responsive without material deviation, reservation, or omission. While 'conditional bid' is not explicitly defined, any departure from the requirements specified in the bidding document would be a 'deviation' and would likely be rejected.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q15_F1",
+        "question": "How much is the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q15_F2",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q15_F3",
+        "question": "How long is the Performance Security valid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q16",
+    "user_question": "Who will pay for the cost of bidding?",
+    "answer": "The Bidder shall bear all costs associated with the preparation and submission of its Bid. The Employer will not be responsible or liable for these costs, regardless of the outcome of the bidding process.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q16_F1",
+        "question": "Can I submit a conditional bid?"
+      },
+      {
+        "follow_up_id": "Q16_F2",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q16_F3",
+        "question": "What are the common sections of a bidding document?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q17",
+    "user_question": "What are the common sections of a bidding document?",
+    "answer": "The Bidding document consists of Part I, II, and III. These include sections such as Instructions to Bidders (ITB), Bid Data Sheet (BDS), Evaluation and Qualification Criteria, Bidding Forms, Fraud and Corruption, Works' Requirements, General Conditions of Contract (GCC), Particular Conditions of Contract (PCC), and Contract Forms.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q17_F1",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      },
+      {
+        "follow_up_id": "Q17_F2",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q17_F3",
+        "question": "What is the 'Scope of Work'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q18",
+    "user_question": "What is the purpose of the 'Bid Data Sheet'?",
+    "answer": "The Bid Data Sheet (BDS) contains specific details related to the bid, such as the name and NIT identification number of the Bidding Document. It supplements the Instructions to Bidders and may contain details on electronic-procurement systems or other project-specific information.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q18_F1",
+        "question": "What is the definition of 'in writing' in this bidding document?"
+      },
+      {
+        "follow_up_id": "Q18_F2",
+        "question": "What happens if a bidder is found to have a conflict of interest?"
+      },
+      {
+        "follow_up_id": "Q18_F3",
+        "question": "How long must my bid remain valid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q19",
+    "user_question": "What does 'post-qualification' mean?",
+    "answer": "Post-qualification is the process where the Employer determines to its satisfaction whether the bidder with the lowest evaluated and substantially responsive bid meets the qualifying criteria specified in Section III, Evaluation and Qualification Criteria. This determination is based on the documentary evidence of the bidder's qualifications.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q19_F1",
+        "question": "What are the acceptable forms of Bid Security?"
+      },
+      {
+        "follow_up_id": "Q19_F2",
+        "question": "What are the grounds for the forfeiture of a Bid Security?"
+      },
+      {
+        "follow_up_id": "Q19_F3",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q20",
+    "user_question": "What is the 'Scope of Work'?",
+    "answer": "The bidding document is issued for the provision of Works as specified in Section VI: Works' Requirements. The Bill of Quantities, which is a key part of the works requirements, contains the rates and quantities for each item of the estimated contract.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q20_F1",
+        "question": "What is a 'Bill of Quantities'?"
+      },
+      {
+        "follow_up_id": "Q20_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q20_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q21",
+    "user_question": "What is a 'Bid Form'?",
+    "answer": "The Letter of Bid and other documents must be prepared using the relevant forms furnished in Section IV: Bidding Forms. These forms must be completed without any alterations to the text, and no substitutes are accepted. All blank spaces must be filled with the requested information.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q21_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q21_F2",
+        "question": "What is the purpose of the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q21_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q22",
+    "user_question": "What happens if there is an error in a bid submission?",
+    "answer": "The e-procurement system automatically calculates the total amount from unit rates and quantities and populates the amount in words from the amount in figures. Therefore, there is no scope of discrepancy and no need for arithmetic correction.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q22_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q22_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q22_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q23",
+    "user_question": "How long must bids remain valid?",
+    "answer": "Bids shall remain valid for the period specified in the BDS after the bid submission deadline date prescribed by the Employer in accordance with ITB 22.1. A bid valid for a shorter period shall be rejected by the Employer as non-responsive.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q23_F1",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q23_F2",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q23_F3",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q24",
+    "user_question": "What is a 'Letter of Acceptance'?",
+    "answer": "The Letter of Acceptance is a document that the Employer sends to the successful Bidder to notify them that their bid has been accepted. This notification also specifies the sum the Employer will pay the Contractor for the execution of the contract. Until a formal contract is prepared and executed, this notification constitutes a binding contract.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q24_F1",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q24_F2",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q24_F3",
+        "question": "What is a 'Bid Form'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q25",
+    "user_question": "What happens after receiving the Letter of Acceptance?",
+    "answer": "The successful Bidder must sign, date, and return the Contract Agreement to the Employer within fourteen (14) days of its receipt.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q25_F1",
+        "question": "What happens if there is an error in a bid submission?"
+      },
+      {
+        "follow_up_id": "Q25_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q25_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q26",
+    "user_question": "What is the purpose of the Performance Security?",
+    "answer": "The Performance Security is required for the successful bidder to guarantee the performance of its obligations during the construction period.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q26_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q26_F2",
+        "question": "What is the purpose of the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q26_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q27",
+    "user_question": "How much is the Performance Security?",
+    "answer": "The Performance Security must be in an amount equal to 2.5% of the bid amount or contract value.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q27_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q27_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q27_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q28",
+    "user_question": "What happens if a bidder fails to provide the Performance Security?",
+    "answer": "Failure to submit the Performance Security will be sufficient grounds for the annulment of the award and forfeiture of the Bid Security.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q28_F1",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q28_F2",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q28_F3",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q29",
+    "user_question": "How long is the Performance Security valid?",
+    "answer": "The Performance Security must be valid until 60 days after the completion of the DLP (Defect Liability Period).",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q29_F1",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q29_F2",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q29_F3",
+        "question": "What is a 'Bid Form'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q30",
+    "user_question": "Can I submit a conditional bid?",
+    "answer": "Conditional bids are not allowed. Any bid that contains a material deviation, reservation, or omission that affects the scope, quality, or performance of the works, or limits the employer's rights or the bidder's obligations, will be rejected.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q30_F1",
+        "question": "What happens if there is an error in a bid submission?"
+      },
+      {
+        "follow_up_id": "Q30_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q30_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q31",
+    "user_question": "Who will pay for the cost of bidding?",
+    "answer": "The bidder is responsible for all costs associated with the preparation and submission of the bid. The employer is not liable for these costs.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q31_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q31_F2",
+        "question": "What is the purpose of the 'Performance Security'?"
+      },
+      {
+        "follow_up_id": "Q31_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q32",
+    "user_question": "What are the common sections of a bidding document?",
+    "answer": "The Bidding document is divided into three parts: Bidding Procedures, Works Requirements, and Conditions of Contract and Contract Forms. These parts contain sections like Instructions to Bidders, Bid Data Sheet, Evaluation and Qualification Criteria, and the Bill of Quantities.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q32_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q32_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q32_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q33",
+    "user_question": "What is the purpose of the 'Bid Data Sheet'?",
+    "answer": "The Bid Data Sheet (BDS) specifies project-specific details and supplements the general instructions in the Bidding Document. For example, it specifies the name and NIT identification number of the bidding document.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q33_F1",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q33_F2",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q33_F3",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q34",
+    "user_question": "What does 'post-qualification' mean?",
+    "answer": "Post-qualification is the process of evaluating a bidder's qualifications after the bids have been opened, to ensure they meet the criteria to satisfactorily perform the contract. This determination is made based on the documentary evidence submitted by the bidder.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q34_F1",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q34_F2",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q34_F3",
+        "question": "What is a 'Bid Form'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q35",
+    "user_question": "What is the 'Scope of Work'?",
+    "answer": "The scope of work is defined by the Works' Requirements section (Section VI) of the bidding document. It includes technical specifications, drawings, and other information that describe the work to be performed.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q35_F1",
+        "question": "What happens if there is an error in a bid submission?"
+      },
+      {
+        "follow_up_id": "Q35_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q35_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q36",
+    "user_question": "What is a 'Bid Form'?",
+    "answer": "The Letter of Bid and other documents, such as the Bid Form, must be prepared using the relevant forms found in Section IV, Bidding Forms. The forms must be completed without alterations, and no substitutes will be accepted.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q36_F1",
+        "question": "What is a 'Bill of Quantities'?"
+      },
+      {
+        "follow_up_id": "Q36_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q36_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q37",
+    "user_question": "What happens if there is an error in a bid submission?",
+    "answer": "According to the document, the e-procurement system automatically calculates the total amount from unit rates and quantities and populates the amount in words from the amount in figures, so there is no scope for discrepancy and no need for arithmetic correction.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q37_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q37_F2",
+        "question": "What is the purpose of the 'Performance Security'?"
+      },
+      {
+        "follow_up_id": "Q37_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q38",
+    "user_question": "How long must bids remain valid?",
+    "answer": "Bids shall remain valid for the period specified in the BDS.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q38_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q38_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q38_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q39",
+    "user_question": "What is a 'Letter of Acceptance'?",
+    "answer": "The Letter of Acceptance is the notification from the Employer to the successful Bidder that their bid has been accepted. It specifies the contract price and constitutes a binding contract until a formal one is prepared and executed.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q39_F1",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q39_F2",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q39_F3",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q40",
+    "user_question": "What happens after receiving the Letter of Acceptance?",
+    "answer": "The successful Bidder is required to sign, date, and return the Contract Agreement to the Employer within fourteen (14) days of its receipt.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q40_F1",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q40_F2",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q40_F3",
+        "question": "What is a 'Bid Form'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q41",
+    "user_question": "What is the purpose of the 'Performance Security'?",
+    "answer": "The Performance Security is required to ensure the successful bidder fulfills their contractual obligations during the construction period.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q41_F1",
+        "question": "What is the definition of 'in writing' in this bidding document?"
+      },
+      {
+        "follow_up_id": "Q41_F2",
+        "question": "What happens if a bidder is found to have a conflict of interest?"
+      },
+      {
+        "follow_up_id": "Q41_F3",
+        "question": "How long must my bid remain valid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q42",
+    "user_question": "How much is the Performance Security?",
+    "answer": "The Performance Security must be an amount equal to 2.5% of the bid amount or contract value.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q42_F1",
+        "question": "What are the acceptable forms of Bid Security?"
+      },
+      {
+        "follow_up_id": "Q42_F2",
+        "question": "What are the grounds for the forfeiture of a Bid Security?"
+      },
+      {
+        "follow_up_id": "Q42_F3",
+        "question": "What is the purpose of the 'Works Requirements' section?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q43",
+    "user_question": "What happens if a bidder fails to provide the Performance Security?",
+    "answer": "Failure to submit the Performance Security will lead to the annulment of the contract award and the forfeiture of the Bid Security.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q43_F1",
+        "question": "What is a 'Bill of Quantities'?"
+      },
+      {
+        "follow_up_id": "Q43_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q43_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q44",
+    "user_question": "How long is the Performance Security valid?",
+    "answer": "The Performance Security must be valid until 60 days after the completion of the DLP (Defect Liability Period).",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q44_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q44_F2",
+        "question": "What is the purpose of the 'Performance Security'?"
+      },
+      {
+        "follow_up_id": "Q44_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q45",
+    "user_question": "Can I submit a conditional bid?",
+    "answer": "No, bids that are not substantially responsive to the requirements of the bidding document, which includes any material deviation or reservation, will be rejected.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q45_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q45_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q45_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q46",
+    "user_question": "Who will pay for the cost of bidding?",
+    "answer": "The bidder is responsible for bearing all costs associated with the preparation and submission of its bid, and the Employer will not be liable for those costs.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q46_F1",
+        "question": "Who will pay for the cost of bidding?"
+      },
+      {
+        "follow_up_id": "Q46_F2",
+        "question": "What are the common sections of a bidding document?"
+      },
+      {
+        "follow_up_id": "Q46_F3",
+        "question": "What is the purpose of the 'Bid Data Sheet'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q47",
+    "user_question": "What are the common sections of a bidding document?",
+    "answer": "The bidding document consists of Part I (Bidding Procedures), Part II (Works Requirements), and Part III (Conditions of Contract and Contract Forms). Each part includes several sections, such as the Instructions to Bidders, Bid Data Sheet, Bidding Forms, and Works' Requirements.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q47_F1",
+        "question": "What does 'post-qualification' mean?"
+      },
+      {
+        "follow_up_id": "Q47_F2",
+        "question": "What is the 'Scope of Work'?"
+      },
+      {
+        "follow_up_id": "Q47_F3",
+        "question": "What is a 'Bid Form'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q48",
+    "user_question": "What is the purpose of the 'Bid Data Sheet'?",
+    "answer": "The Bid Data Sheet (BDS) provides project-specific information and supplements the Instructions to Bidders. It is a crucial section for bidders to understand the specific requirements and details of the project.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q48_F1",
+        "question": "What happens if there is an error in a bid submission?"
+      },
+      {
+        "follow_up_id": "Q48_F2",
+        "question": "How long must bids remain valid?"
+      },
+      {
+        "follow_up_id": "Q48_F3",
+        "question": "What is a 'Letter of Acceptance'?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q49",
+    "user_question": "What does 'post-qualification' mean?",
+    "answer": "Post-qualification is the process where the Employer evaluates the qualifications of the bidder who submitted the lowest evaluated bid to ensure they are capable of performing the contract. This is based on the documentary evidence submitted by the bidder.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q49_F1",
+        "question": "What happens after receiving the Letter of Acceptance?"
+      },
+      {
+        "follow_up_id": "Q49_F2",
+        "question": "What is the purpose of the 'Performance Security'?"
+      },
+      {
+        "follow_up_id": "Q49_F3",
+        "question": "How much is the Performance Security?"
+      }
+    ]
+  },
+  {
+    "question_id": "Q50",
+    "user_question": "What is the 'Scope of Work'?",
+    "answer": "The scope of work is detailed in Section VI, 'Works' Requirements'. This section includes the technical specifications and other details for the work to be provided.",
+    "follow_up_questions": [
+      {
+        "follow_up_id": "Q50_F1",
+        "question": "What happens if a bidder fails to provide the Performance Security?"
+      },
+      {
+        "follow_up_id": "Q50_F2",
+        "question": "How long is the Performance Security valid?"
+      },
+      {
+        "follow_up_id": "Q50_F3",
+        "question": "Can I submit a conditional bid?"
+      }
+    ]
+  }
+]
+
+
+
+
+[
+  {
+    "user_question": "Who are the Eligible Bidders?",
+    "answer": [
+      "An eligible bidder can be a **private entity** or a **Joint Venture (JV)**.",
+      "The document outlines strict requirements for JVs, including the maximum number of members, how the agreement must be signed, and the legal liabilities of all members.",
+      "Bidders are screened for **conflicts of interest**, which are broadly defined to include financial, professional, or familial relationships.",
+      "A firm cannot participate in more than one bid, and bidders must not be suspended by the Employer or sanctioned by international organizations."
+    ],
+    "follow_up_questions": [
+      "What constitutes a conflict of interest for a bidder?",
+      "What are the specific requirements for a Joint Venture?",
+      "What rules apply to a bidder's nationality?"
+    ]
+  },
+  {
+    "user_question": "What constitutes a conflict of interest for a bidder?",
+    "answer": [
+      "A bidder has a conflict of interest if they **control or are controlled by another bidder**, have the **same legal representative**, or have a relationship that could **influence the bid or the Employer’s decisions**.",
+      "This also applies if a bidder or its affiliates participated as a consultant in the **preparation of the design or technical specifications** for the project.",
+      "A conflict exists if they have a close business or family relationship with a professional staff member involved in the bidding or implementation."
+    ],
+    "follow_up_questions": [
+      "What is the policy on Fraud and Corruption?",
+      "What happens if a bidder is found to have a conflict of interest?",
+      "What are the requirements for Bid validity and the process for extending it?"
+    ]
+  },
+  {
+    "user_question": "What is the policy on Fraud and Corruption?",
+    "answer": [
+      "The document requires all bidders to comply with the **anti-corruption guidelines of the World Bank and the Asian Development Bank**.",
+      "Bidders and their agents must permit these organizations to **inspect and audit all accounts, records, and documents** related to the bidding process.",
+      "Any bidder found to be engaged in fraudulent or corrupt practices will be subject to a range of sanctions."
+    ],
+    "follow_up_questions": [
+      "How is 'in writing' defined?",
+      "What are the key terms used in the bidding document?",
+      "What is the process for submitting, modifying, and withdrawing a bid?"
+    ]
+  },
+  {
+    "user_question": "How is 'in writing' defined?",
+    "answer": [
+      "The term **'in writing'** means any communication in a written form with proof of receipt.",
+      "This includes standard methods like mail and fax, as well as electronic communication such as email or through the e-procurement system."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Bid Data Sheet'?",
+      "What are the requirements for a bidder's nationality?",
+      "What are the accepted forms of Bid Security?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Bid Data Sheet'?",
+    "answer": [
+      "The **Bid Data Sheet (BDS)** provides specific, project-related details that **supplement the general instructions** to bidders.",
+      "It specifies crucial information such as the name and NIT identification number of the bidding document, and the specific e-procurement system.",
+      "The BDS tailors the general bidding document to the specific project."
+    ],
+    "follow_up_questions": [
+      "How long must bids remain valid?",
+      "What happens if a bidder modifies or withdraws their bid during the validity period?",
+      "What is the process for submitting, modifying, and withdrawing a bid?"
+    ]
+  },
+  {
+    "user_question": "How long must bids remain valid?",
+    "answer": [
+      "Bids must remain valid for the period specified in the **Bid Data Sheet (BDS)**, starting from the bid submission deadline.",
+      "A bid with a shorter validity period will be **rejected as non-responsive**.",
+      "In special circumstances, the Employer may request a written extension of the validity period, and bidders who agree are not permitted to modify their bids."
+    ],
+    "follow_up_questions": [
+      "What are the accepted forms of Bid Security?",
+      "What happens after receiving the Letter of Acceptance?",
+      "What is the purpose of the 'Performance Security'?"
+    ]
+  },
+  {
+    "user_question": "What are the accepted forms of Bid Security?",
+    "answer": [
+      "The Bid Security, if required, must be in the form of a **demand guarantee**.",
+      "This can be an **online submission** through the E-Procurement portal, an **unconditional irrevocable guarantee** from a reputable bank, or an **Insurance Surety Bond**."
+    ],
+    "follow_up_questions": [
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What happens if a bidder fails to sign the contract?",
+      "What is the role of the e-procurement system in bid submission?"
+    ]
+  },
+  {
+    "user_question": "What are the grounds for the forfeiture of a Bid Security?",
+    "answer": [
+      "The Bid Security can be forfeited if a bidder **withd
+
+raws, modifies, or substitutes their bid** during the validity period.",
+      "It can also be forfeited if the successful bidder **fails to sign the Contract Agreement** or **furnish the required Performance Security**.",
+      "The security can be forfeited if a bidder is found to have submitted false or inaccurate information."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What happens if a bidder is found to have a conflict of interest?",
+      "How does the e-procurement system handle bid submissions?"
+    ]
+  },
+  {
+    "user_question": "What is the process for submitting, modifying, and withdrawing a bid?",
+    "answer": [
+      "Bids must be submitted **electronically** through the e-procurement system before the specified deadline.",
+      "Bidders can **modify their bids** before the deadline, with the latest version being considered.",
+      "Bids can also be **withdrawn** before the deadline.",
+      "After the deadline, a bid cannot be withdrawn, substituted, or modified."
+    ],
+    "follow_up_questions": [
+      "How long must bids remain valid?",
+      "What happens if a bidder modifies or withdraws their bid during the validity period?",
+      "What is the role of the e-procurement system in bid submission?"
+    ]
+  },
+  {
+    "user_question": "What is the role of the e-procurement system in bid submission?",
+    "answer": [
+      "The e-procurement system is the **mandatory platform for electronic bid submission**.",
+      "It automatically calculates totals from the unit rates and quantities in the Bill of Quantities (BOQ), thereby **eliminating the possibility of arithmetic errors**."
+    ],
+    "follow_up_questions": [
+      "What is a 'Bill of Quantities'?",
+      "What happens if a bidder fails to provide the Performance Security?",
+      "What is the purpose of the 'Bid Data Sheet'?"
+    ]
+  },
+  {
+    "user_question": "What is the process for the opening and evaluation of bids?",
+    "answer": [
+      "Bid evaluation is a two-stage process.",
+      "First, the **Technical Bids are opened publicly**.",
+      "The **Price Bids of only the technically qualified bidders** are then opened on a later date.",
+      "The Employer evaluates all responsive bids to determine the lowest evaluated bid."
+    ],
+    "follow_up_questions": [
+      "What does 'post-qualification' mean?",
+      "What is the definition of 'in writing'?",
+      "What is the role of the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What does 'post-qualification' mean?",
+    "answer": [
+      "Post-qualification is the process where the Employer assesses if the bidder with the **lowest evaluated and substantially responsive bid** meets the qualifying criteria.",
+      "This is based on the documentary evidence submitted by the bidder.",
+      "An affirmative determination is a prerequisite for the contract award."
+    ],
+    "follow_up_questions": [
+      "What is the process for contract award and what security is required?",
+      "What happens if a bidder fails to sign the contract or provide the performance security?",
+      "How long must bids remain valid?"
+    ]
+  },
+  {
+    "user_question": "What is the role of subcontractors in the bidding process?",
+    "answer": [
+      "A firm that is a bidder (individually or as a JV member) cannot also participate as a subcontractor in other bids.",
+      "Such participation results in the disqualification of all bids the firm is involved in.",
+      "However, a firm that is not a bidder or JV member may participate as a subcontractor in more than one bid."
+    ],
+    "follow_up_questions": [
+      "Who are the Eligible Bidders?",
+      "What constitutes a conflict of interest for a bidder?",
+      "What are the specific requirements for a Joint Venture?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding the use of bidding forms?",
+    "answer": [
+      "Bidders must use the specific forms provided in **Section IV** of the document.",
+      "These forms, such as the Letter of Bid, must be completed **without any alterations to the text**.",
+      "No substitutes will be accepted, and all blank spaces must be filled in with the requested information."
+    ],
+    "follow_up_questions": [
+      "What is the role of the e-procurement system in bid submission?",
+      "What is the purpose of the 'Bid Data Sheet'?",
+      "What are the grounds for the forfeiture of a Bid Security?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding the nationality of a bidder?",
+    "answer": [
+      "A bidder can have the nationality of **any country**, subject to certain restrictions.",
+      "A bidder is deemed to have the nationality of a country if it is constituted, incorporated, or registered and operates in conformity with the laws of that country.",
+      "A bidder may be ineligible if their country prohibits commercial relations with the Borrower's country."
+    ],
+    "follow_up_questions": [
+      "Who are the Eligible Bidders?",
+      "What constitutes a conflict of interest for a bidder?",
+      "What is the policy on Fraud and Corruption?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Bidder Information Form'?",
+    "answer": [
+      "The Bidder Information Form is one of the **Bidding Forms** that bidders must complete and submit.",
+      "Its purpose is to provide the Employer with essential information about the bidder, including their legal name, address, and any legal representatives.",
+      "For joint ventures, this form requires information for all members."
+    ],
+    "follow_up_questions": [
+      "What are the specific requirements for a Joint Venture?",
+      "What rules apply to a bidder's nationality?",
+      "What are the key terms used in the bidding document?"
+    ]
+  },
+  {
+    "user_question": "What are the consequences of being sanctioned by the World Bank?",
+    "answer": [
+      "A bidder who has been sanctioned by the World Bank is **ineligible to be prequalified, bid, or be awarded a Bank-financed contract**.",
+      "This ineligibility lasts for the period determined by the Bank.",
+      "A list of debarred firms is available for reference."
+    ],
+    "follow_up_questions": [
+      "What is the policy on Fraud and Corruption?",
+      "Who are the Eligible Bidders?",
+      "What are the acceptable forms of Bid Security?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Works Requirements' section?",
+    "answer": [
+      "This section is the **technical blueprint of the project**.",
+      "It contains the **detailed technical specifications** that fully describe the work to be performed.",
+      "It also includes the **Bill of Quantities (BOQ)**, which provides a list of work items, their quantities, and the rates set by the Employer.",
+      "This part is essential for bidders to understand the full **scope of work** and to accurately prepare their price proposal."
+    ],
+    "follow_up_questions": [
+      "What is a 'Bill of Quantities'?",
+      "What is the 'Scope of Work'?",
+      "What happens if there is an error in a bid submission?"
+    ]
+  },
+  {
+    "user_question": "What is a 'Bill of Quantities'?",
+    "answer": [
+      "The **Bill of Quantities (BOQ)** is a key document that is annexed to the 'Works Requirements' section.",
+      "It lists the quantities of each item of work and the rates worked out by the Employer.",
+      "The e-procurement system uses the BOQ to **automatically calculate the total amount** of the bid, ensuring accuracy and consistency."
+    ],
+    "follow_up_questions": [
+      "What is the role of the e-procurement system in bid submission?",
+      "What is the purpose of the 'Works Requirements' section?",
+      "What happens if there is an error in a bid submission?"
+    ]
+  },
+  {
+    "user_question": "How is the scope of work defined?",
+    "answer": [
+      "The scope of work is detailed in the 'Works' Requirements' section, which serves as the technical blueprint for the project.",
+      "This section contains the detailed technical specifications and other information that describes the work to be performed.",
+      "It also includes the 'Bill of Quantities' (BOQ), which is a crucial document that provides a list of work items, their quantities, and the rates set by the Employer.",
+      "Bidders must use this section to fully understand the project and prepare their price proposals."
+    ],
+    "follow_up_questions": [
+      "What is a 'Bill of Quantities'?",
+      "What happens if there is an error in a bid submission?",
+      "What is the difference between General and Particular Conditions of Contract?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Conditions of Contract and Contract Forms' section?",
+    "answer": [
+      "This section establishes the **legal and contractual framework** for the project.",
+      "It includes the **General Conditions of Contract (GCC)** and the **Particular Conditions of Contract (PCC)**, which outline the rights and obligations of both the Employer and the Contractor.",
+      "This part also details the requirement for a **Performance Security**, a financial guarantee to ensure the successful bidder's performance during the project.",
+      "The various **Contract Forms** for finalizing the agreement are also found here."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "How much is the Performance Security?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Performance Security'?",
+    "answer": [
+      "The **Performance Security** is a financial guarantee provided by the successful bidder.",
+      "Its purpose is to ensure they **fulfill their contractual obligations** during the construction period.",
+      "It is a critical requirement to protect the Employer against non-performance."
+    ],
+    "follow_up_questions": [
+      "How much is the Performance Security?",
+      "What happens if a bidder fails to provide the Performance Security?",
+      "What are the accepted forms of Bid Security?"
+    ]
+  },
+  {
+    "user_question": "How much is the Performance Security?",
+    "answer": [
+      "The Performance Security must be an amount equal to **2.5% of the bid amount** or the contract value."
+    ],
+    "follow_up_questions": [
+      "How long is the Performance Security valid?",
+      "What happens if a bidder fails to provide the Performance Security?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "How long is the Performance Security valid?",
+    "answer": [
+      "The Performance Security must remain valid until **60 days after the completion of the DLP** (Defect Liability Period)."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What is the process for contract award and what security is required?",
+      "What happens after receiving the Letter of Acceptance?"
+    ]
+  },
+  {
+    "user_question": "What is the 'Letter of Acceptance'?",
+    "answer": [
+      "The **'Letter of Acceptance'** is the formal notification that the Employer sends to the successful bidder.",
+      "It specifies the contract price and constitutes a **binding contract** between the parties until a formal one is prepared and executed."
+    ],
+    "follow_up_questions": [
+      "What happens after receiving the Letter of Acceptance?",
+      "What is the process for contract award and what security is required?",
+      "What happens if a bidder fails to sign the contract?"
+    ]
+  },
+  {
+    "user_question": "What happens after receiving the Letter of Acceptance?",
+    "answer": [
+      "After receiving the Letter of Acceptance, the successful bidder must **sign, date, and return the formal Contract Agreement** to the Employer within **fourteen (14) days**.",
+      "They must also furnish the required **Performance Security** as a prerequisite to the contract."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What happens if a bidder fails to sign the contract?",
+      "What is the process for contract award and what security is required?"
+    ]
+  },
+  {
+    "user_question": "What happens if a bidder fails to sign the contract or provide the Performance Security?",
+    "answer": [
+      "Failing to sign the contract results in the **suspension of the bidder's registration for one year** and the **forfeiture of the Bid Security**.",
+      "Failure to provide the Performance Security is sufficient grounds for the **annulment of the award** and forfeiture of the Bid Security."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What are the key criteria for bid evaluation?",
+    "answer": [
+      "The Employer will evaluate a bid based on the **bid price**, any discounts offered, and other specific factors outlined in the **Evaluation and Qualification Criteria** section.",
+      "This evaluation is performed to determine the lowest evaluated bid among the substantially responsive bidders."
+    ],
+    "follow_up_questions": [
+      "What does 'post-qualification' mean?",
+      "How long must bids remain valid?",
+      "What are the grounds for the forfeiture of a Bid Security?"
+    ]
+  },
+  {
+    "user_question": "What are the key takeaways from the Bidding Document?",
+    "answer": [
+      "The document is a comprehensive guide with three main parts: Bidding Procedures, Works Requirements, and Conditions of Contract.",
+      "It sets strict rules on **bidder eligibility**, conflicts of interest, and fraud to ensure fairness.",
+      "Bids are submitted **electronically**, and the system helps prevent arithmetic errors.",
+      "The **'Works Requirements' section** serves as the technical blueprint, detailing the scope of work and including the **'Bill of Quantities' (BOQ)**.",
+      "Both a **Bid Security** and a mandatory **Performance Security** are required to protect the Employer.",
+      "The contract is awarded to the lowest evaluated and qualified bidder after a **'post-qualification'** process, with the **'Letter of Acceptance'** serving as a binding contract until a formal one is signed."
+    ],
+    "follow_up_questions": [
+      "What is a 'Bill of Quantities'?",
+      "What is the purpose of the 'Performance Security'?",
+      "What does 'post-qualification' mean?"
+    ]
+  }
+]
+
+
+
+
+[
+  {
+    "user_question": "What is the name and purpose of the work being tendered?",
+    "answer": [
+      "The work is titled 'Balance flood mitigation works of Construction of Neerukonda Reservoir (0.4 TMC) in Amaravati Capital City, Andhra Pradesh on Lump sum contract'.",
+      "It is a World Bank and ADB-financed project related to the Amaravati Capital City Development Program."
+    ],
+    "follow_up_questions": [
+      "What is the source of the project's financing?",
+      "What are the definitions of the new terms used in the bidding document?",
+      "How are disputes and grievances handled?"
+    ]
+  },
+  {
+    "user_question": "What are the definitions of the new terms used in the bidding document?",
+    "answer": [
+      "**ES** means Environmental and Social.",
+      "**Sexual Exploitation and Abuse (SEA)** is defined as any actual or attempted abuse of a position of vulnerability for sexual purposes.",
+      "**Sexual Harassment (SH)** is defined as unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature."
+    ],
+    "follow_up_questions": [
+      "What is the source of the project's financing?",
+      "What is the policy on Fraud and Corruption?",
+      "What is a C-ESMP and what does it include?"
+    ]
+  },
+  {
+    "user_question": "What is the source of the project's financing?",
+    "answer": [
+      "The Employer has received financing from the **World Bank (WB)** and the **Asian Development Bank (ADB)**."
+    ],
+    "follow_up_questions": [
+      "What are the new rules on conflicts of interest?",
+      "What is the policy on Fraud and Corruption?",
+      "What are the consequences of being sanctioned by the World Bank or ADB?"
+    ]
+  },
+  {
+    "user_question": "What are the new rules on conflicts of interest?",
+    "answer": [
+      "A bidder has a conflict of interest if they have a **relative** employed in the division or circle in the rank of Assistant Engineer or Assistant Executive Engineer and above, or Divisional Accounts Officer and above.",
+      "Bidders must intimate the names of such persons and furnish a list of Gazetted/Non-Gazetted State Government employees related to them.",
+      "Retired officers of the Govt. of AP or Govt. of India are disqualified from tendering for two years from retirement without prior permission.",
+      "A bidder or employee found to be a retired Gazetted Officer who had not obtained government permission is also disqualified."
+    ],
+    "follow_up_questions": [
+      "How can a bidder be disqualified?",
+      "What constitutes a conflict of interest for a bidder?",
+      "What are the specific requirements for a Joint Venture?"
+    ]
+  },
+  {
+    "user_question": "How can a bidder be disqualified?",
+    "answer": [
+      "A bidder can be disqualified for having a conflict of interest.",
+      "A firm that participates in more than one bid, including as a subcontractor in other bids, will be disqualified.",
+      "Bidders can also be disqualified if they are blacklisted by any Central/State Government institutions, World Bank, or ADB.",
+      "Bidders who have misled or made false representations, have a record of poor performance, or quoted unreasonably high bid prices in the past 10 years are subject to disqualification.",
+      "Bidders will also be disqualified if they have been sanctioned and/or are under investigation by the World Bank or Asian Development Bank."
+    ],
+    "follow_up_questions": [
+      "What is the policy on Fraud and Corruption?",
+      "What are the consequences of being sanctioned by the World Bank or ADB?",
+      "What is the role of subcontractors in the bidding process?"
+    ]
+  },
+  {
+    "user_question": "What are the consequences of being sanctioned by the World Bank or ADB?",
+    "answer": [
+      "A bidder sanctioned or under investigation by the World Bank or ADB is ineligible to be prequalified, bid, or be awarded a contract for the determined period.",
+      "A bid from a temporarily suspended or debarred firm by ADB will be rejected and may be subject to further investigation."
+    ],
+    "follow_up_questions": [
+      "What is the policy on Fraud and Corruption?",
+      "What are the acceptable forms of Bid Security?",
+      "How is the bid evaluated?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding a site visit?",
+    "answer": [
+      "Bidders must conduct a site visit as part of their due diligence.",
+      "After a bid is submitted, it is deemed that the bidder has properly conducted the site visit and understood all conditions.",
+      "The bidder must mention while submitting the bid that the site visit was properly conducted."
+    ],
+    "follow_up_questions": [
+      "What is the process for submitting, modifying, and withdrawing a bid?",
+      "What are the key criteria for bid evaluation?",
+      "What are the consequences of being sanctioned by the World Bank or ADB?"
+    ]
+  },
+  {
+    "user_question": "How much is the bid fee and what are the accepted forms of payment?",
+    "answer": [
+      "The **Bid Transaction Fee** is 0.03% of the Estimated Contract Value (ECV), with a cap of Rs. 10,000 for works up to Rs. 50 crores, and Rs. 25,000 for works above Rs. 50 crores.",
+      "The **Cost of bid processing fee** is a non-refundable amount of Rs. 20,000.",
+      "Both fees must be paid online at the time of bid submission."
+    ],
+    "follow_up_questions": [
+      "What are the accepted forms of Bid Security?",
+      "How long must bids remain valid?",
+      "What is the role of the e-procurement system in bid submission?"
+    ]
+  },
+  {
+    "user_question": "What is the C-ESMP and what does it include?",
+    "answer": [
+      "The C-ESMP is the **Contractor's Environmental and Social Management Plan**.",
+      "It is a collection of **Management Strategies and Implementation Plans (MSIPs)** that manage the environmental and social risks and impacts of the project.",
+      "The C-ESMP must be prepared based on the E&S requirements in Appendix I and Appendix II of Part VI.",
+      "The C-ESMP must be reviewed periodically, at least every six months, and submitted to the Engineer for review.",
+      "The works can only commence with prior approval of the C-ESMP by the PMC and Employer."
+    ],
+    "follow_up_questions": [
+      "What additional documents must a bidder submit?",
+      "What is the purpose of the 'Performance Security'?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What documents are required for the Technical Proposal?",
+    "answer": [
+      "The Technical Proposal must cover the Bidder's understanding and comprehension of the Works.",
+      "It must include the Bidder's Approach & Methodology, an Outline Quality Control & Assurance Plan, and an Outline Social, Safety, Health and Environment Plan.",
+      "Other required plans include the Bidder's Management Strategies and Implementation Plans (MSIPs), the Programme for execution of Work, and the Logistic Plan.",
+      "The proposal must also contain the Bidder's Organization Chart, a plan for deploying Plant & Machinery, and a plan for procurement of key materials.",
+      "Bidders should also submit a plan for engaging specialized agencies for specific work components."
+    ],
+    "follow_up_questions": [
+      "What is a C-ESMP and what does it include?",
+      "How is the bid evaluated?",
+      "What are the rules regarding the use of bidding forms?"
+    ]
+  },
+  {
+    "user_question": "How long must bids remain valid?",
+    "answer": [
+      "The bid validity period is **NINETY (90) days**."
+    ],
+    "follow_up_questions": [
+      "What are the accepted forms of Bid Security?",
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What is the process for submitting, modifying, and withdrawing a bid?"
+    ]
+  },
+  {
+    "user_question": "What are the accepted forms of Bid Security?",
+    "answer": [
+      "The Bid Security must be in the form of a **demand guarantee**.",
+      "It can be an **NEFT/RTGS transfer**, an **irrevocable bank guarantee**, or an **Insurance Surety Bond**.",
+      "The bid security must be from any Govt. Banks, Nationalized Banks, Public Sector Banks, or Scheduled Banks and be valid for 180 days."
+    ],
+    "follow_up_questions": [
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What happens if a bidder fails to provide the Bid Security?",
+      "What is the purpose of the 'Performance Security'?"
+    ]
+  },
+  {
+    "user_question": "What happens if a bidder fails to provide the Bid Security?",
+    "answer": [
+      "If a successful bidder fails to submit the original hard copies of the online payment receipts, bank guarantee, or insurance surety bond for the security deposit, their bid will be treated as invalid.",
+      "The Department can also invoke legal processes, including criminal prosecution, for such defaulting bidders."
+    ],
+    "follow_up_questions": [
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "How is the bid evaluated?",
+      "What is the process for the opening and evaluation of bids?"
+    ]
+  },
+  {
+    "user_question": "What is the role of the e-procurement system in bid submission?",
+    "answer": [
+      "The e-procurement portal, www.apeprocurement.gov.in, is the **mandatory platform for electronic bid submission**.",
+      "Bidders must register on the portal to get a user ID and password to submit their tender online.",
+      "The bidder must authenticate the bid with their **Digital Certificate** for it to be accepted.",
+      "The authorized signatory must have a valid digital signature and sign each page of their submission before scanning and uploading it."
+    ],
+    "follow_up_questions": [
+      "What is the process for submitting, modifying, and withdrawing a bid?",
+      "What are the rules regarding the use of bidding forms?",
+      "What is the purpose of the 'Bidder Information Form'?"
+    ]
+  },
+  {
+    "user_question": "What is the process for the opening and evaluation of bids?",
+    "answer": [
+      "All bids will first be checked to ensure they are accompanied by a valid bid security in the required amount and form.",
+      "Bids without a valid bid security will be rejected and not evaluated further.",
+      "The Employer will then determine if each bid is responsive to the bid document's terms, conditions, and specifications.",
+      "Bids with any material deviation or reservation will be disqualified and rejected.",
+      "The technical evaluation will assess the bidder's past work experience, financial strength, and technical capacity.",
+      "A bidder must meet the pre-qualification requirements to be eligible for the opening of their price bid."
+    ],
+    "follow_up_questions": [
+      "What does 'post-qualification' mean?",
+      "How long must bids remain valid?",
+      "What are the key criteria for bid evaluation?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding subcontracting?",
+    "answer": [
+      "The total value of works awarded to a subcontractor **cannot exceed 50 per cent** of the contract value.",
+      "A bidder has **no right to sub-contract** any part of the work without the Employer’s permission.",
+      "The bidder must submit a written request detailing the necessity of the subcontracting, the name and qualifications of the proposed subcontractor, and proof that the subcontractor is eligible.",
+      "The Tender Accepting Authority will verify the subcontractor's qualifications before awarding the work.",
+      "The extent of the subcontracted work will be added to the subcontractor's experience and deducted from the main contractor's experience for the purpose of an experience certificate.",
+      "The main contractor is responsible for all liabilities arising from the work done by the subcontractor."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What are the accepted forms of Bid Security?",
+      "Who are the Eligible Bidders?"
+    ]
+  },
+  {
+    "user_question": "What is the E&S Performance Security?",
+    "answer": [
+      "The successful bidder must furnish an **E&S Performance Security** to ensure their environmental and social (E&S) obligations are met.",
+      "The amount is equal to **0.1 per cent of the bid amount** or contract value.",
+      "It must be in the form of an unconditional and irrevocable Bank Guarantee or Insurance Surety Bond.",
+      "This security is **in addition to** the regular Performance Security."
+    ],
+    "follow_up_questions": [
+      "How much is the Performance Security?",
+      "How long is the Performance Security valid?",
+      "What is the purpose of the 'Performance Security'?"
+    ]
+  },
+  {
+    "user_question": "How can a bidder make a procurement-related complaint?",
+    "answer": [
+      "A bidder can submit a complaint **in writing** to the Chairperson and Managing Director of ADCL.",
+      "The complaint can challenge the terms of the tender, the Employer’s decision to exclude a bidder, or the decision to award the contract.",
+      "If the bidder is not satisfied, they can file an appeal to the **Appellate Authority**, who is the Secretary, MA&UD, Government of Andhra Pradesh."
+    ],
+    "follow_up_questions": [
+      "What is the process for filing an appeal?",
+      "What is the process for settling post-contract disputes?",
+      "What is the purpose of the 'Bidder Information Form'?"
+    ]
+  },
+  {
+    "user_question": "What is the process for filing an appeal?",
+    "answer": [
+      "An appeal must be filed **within 7 days** from the date of the decision being appealed.",
+      "It must be submitted in writing to the Appellate Authority, clearly stating the grounds for the appeal.",
+      "The Appellate Authority may conduct a hearing where both parties can present arguments and evidence.",
+      "The Appellate Authority will issue a final and binding written decision within 15 days of the hearing."
+    ],
+    "follow_up_questions": [
+      "What is the process for settling post-contract disputes?",
+      "What are the key criteria for bid evaluation?",
+      "What happens if a bidder fails to sign the contract or provide the performance security?"
+    ]
+  },
+  {
+    "user_question": "What is the process for settling post-contract disputes?",
+    "answer": [
+      "The parties must first attempt to resolve the dispute by mutual consultation within **15 days** from the dispute's occurrence and written representation.",
+      "If mutual consultation fails, disputes are referred for evaluation and negotiation to the Superintending Engineer for claims up to Rs. 10,000, and the Chief Engineer for claims up to Rs. 50,000.",
+      "Disputes above Rs. 50,000 are referred to the **Appellate Authority**.",
+      "The Appellate Authority's decision is final and binding.",
+      "If a dispute is not resolved by the Appellate Authority within 15 days, the contractor must approach a Civil Court of competent jurisdiction by way of a Civil suit."
+    ],
+    "follow_up_questions": [
+      "How can a bidder make a procurement-related complaint?",
+      "What are the key takeaways from the Bidding Document?",
+      "What happens if a bidder fails to sign the contract or provide the Performance Security?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding the use of bidding forms?",
+    "answer": [
+      "Bidders must use the specific forms provided in **Section IV** of the document.",
+      "These forms, such as the Letter of Bid, must be completed **without any alterations to the text**.",
+      "No substitutes will be accepted, and all blank spaces must be filled in with the requested information."
+    ],
+    "follow_up_questions": [
+      "What is the role of the e-procurement system in bid submission?",
+      "What is the purpose of the 'Bid Data Sheet'?",
+      "What are the grounds for the forfeiture of a Bid Security?"
+    ]
+  },
+  {
+    "user_question": "How is the bid evaluated?",
+    "answer": [
+      "The evaluation is done in two parts: technical and financial.",
+      "The technical bid is evaluated for a valid bid security, responsiveness to the bid documents, and the bidder's technical capability.",
+      "Technical capability is assessed based on past work experience, financial strength, and the capacity to mobilize key equipment and personnel.",
+      "Only bidders who meet the pre-qualification requirements are eligible for the opening of their Price Bid."
+    ],
+    "follow_up_questions": [
+      "What is the process for the opening and evaluation of bids?",
+      "What does 'post-qualification' mean?",
+      "What is the purpose of the 'Works Requirements' section?"
+    ]
+  },
+  {
+    "user_question": "What does 'post-qualification' mean?",
+    "answer": [
+      "Post-qualification is the process where the Employer assesses if the bidder with the **lowest evaluated and substantially responsive bid** meets the qualifying criteria.",
+      "This is based on the documentary evidence submitted by the bidder.",
+      "An affirmative determination is a prerequisite for the contract award."
+    ],
+    "follow_up_questions": [
+      "What is the process for contract award and what security is required?",
+      "What happens if a bidder fails to sign the contract or provide the performance security?",
+      "How long must bids remain valid?"
+    ]
+  },
+  {
+    "user_question": "What is the process for contract award and what security is required?",
+    "answer": [
+      "The contract is awarded to the lowest evaluated and qualified bidder after a **'post-qualification'** process.",
+      "The successful bidder must then furnish a **Performance Security** equal to **2.5% of the bid amount** and an **E&S Performance Security** equal to **0.1% of the bid amount**.",
+      "The 'Letter of Acceptance' serves as a binding contract until a formal one is signed."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What happens after receiving the Letter of Acceptance?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Performance Security'?",
+    "answer": [
+      "The **Performance Security** is a financial guarantee provided by the successful bidder.",
+      "Its purpose is to ensure they **fulfill their contractual obligations** during the construction period.",
+      "It is a critical requirement to protect the Employer against non-performance."
+    ],
+    "follow_up_questions": [
+      "How much is the Performance Security?",
+      "What happens if a bidder fails to provide the Performance Security?",
+      "What are the accepted forms of Bid Security?"
+    ]
+  },
+  {
+    "user_question": "How much is the Performance Security?",
+    "answer": [
+      "The Performance Security must be an amount equal to **2.5% of the bid amount** or the contract value.",
+      "The E&S Performance Security is a separate amount equal to **0.1% of the bid amount**."
+    ],
+    "follow_up_questions": [
+      "How long is the Performance Security valid?",
+      "What happens if a bidder fails to provide the Performance Security?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "How long is the Performance Security valid?",
+    "answer": [
+      "The Performance Security must remain valid until **60 days after the completion of the DLP** (Defect Liability Period).",
+      "The E&S Performance Security is valid for the same duration."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What is the process for contract award and what security is required?",
+      "What happens after receiving the Letter of Acceptance?"
+    ]
+  },
+  {
+    "user_question": "What is the 'Letter of Acceptance'?",
+    "answer": [
+      "The **'Letter of Acceptance'** is the formal notification that the Employer sends to the successful bidder.",
+      "It specifies the contract price and constitutes a **binding contract** between the parties until a formal one is prepared and executed."
+    ],
+    "follow_up_questions": [
+      "What happens after receiving the Letter of Acceptance?",
+      "What is the process for contract award and what security is required?",
+      "What happens if a bidder fails to sign the contract?"
+    ]
+  },
+  {
+    "user_question": "What happens after receiving the Letter of Acceptance?",
+    "answer": [
+      "After receiving the Letter of Acceptance, the successful bidder must **sign, date, and return the formal Contract Agreement** to the Employer within **fourteen (14) days**.",
+      "They must also furnish the required **Performance Security** as a prerequisite to the contract."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What happens if a bidder fails to sign the contract?",
+      "What is the process for contract award and what security is required?"
+    ]
+  },
+  {
+    "user_question": "What happens if a bidder fails to sign the contract or provide the Performance Security?",
+    "answer": [
+      "Failing to sign the contract results in the **suspension of the bidder's registration for one year** and the **forfeiture of the Bid Security**.",
+      "Failure to provide the Performance Security is sufficient grounds for the **annulment of the award** and forfeiture of the Bid Security."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Performance Security'?",
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What is the 'Letter of Acceptance'?"
+    ]
+  },
+  {
+    "user_question": "What are the key criteria for bid evaluation?",
+    "answer": [
+      "The Employer will evaluate a bid based on the **bid price**, any discounts offered, and other specific factors outlined in the **Evaluation and Qualification Criteria** section.",
+      "This evaluation is performed to determine the lowest evaluated bid among the substantially responsive bidders."
+    ],
+    "follow_up_questions": [
+      "What does 'post-qualification' mean?",
+      "How long must bids remain valid?",
+      "What are the grounds for the forfeiture of a Bid Security?"
+    ]
+  },
+  {
+    "user_question": "What are the key takeaways from the Bidding Document?",
+    "answer": [
+      "The document is a comprehensive guide with three main parts: Bidding Procedures, Works Requirements, and Conditions of Contract.",
+      "It sets strict rules on **bidder eligibility**, conflicts of interest, and fraud to ensure fairness.",
+      "Bids are submitted **electronically**, and the system helps prevent arithmetic errors.",
+      "The **'Works Requirements' section** serves as the technical blueprint, detailing the scope of work and including the **'Bill of Quantities' (BOQ)**.",
+      "Both a **Bid Security** and a mandatory **Performance Security** are required to protect the Employer.",
+      "The contract is awarded to the lowest evaluated and qualified bidder after a **'post-qualification'** process, with the **'Letter of Acceptance'** serving as a binding contract until a formal one is signed."
+    ],
+    "follow_up_questions": [
+      "What is a 'Bill of Quantities'?",
+      "What is the purpose of the 'Performance Security'?",
+      "What does 'post-qualification' mean?"
+    ]
+  },
+  {
+    "user_question": "How are non-material non-conformities handled?",
+    "answer": [
+      "The bidding document states that **non-material and non-conformities shall not be permitted**."
+    ],
+    "follow_up_questions": [
+      "What are the key criteria for bid evaluation?",
+      "How is the bid evaluated?",
+      "What is the purpose of the 'Works Requirements' section?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding the nationality of a bidder?",
+    "answer": [
+      "A bidder can have the nationality of **any country**, subject to certain restrictions.",
+      "A bidder is deemed to have the nationality of a country if it is constituted, incorporated, or registered and operates in conformity with the laws of that country.",
+      "A bidder may be ineligible if their country prohibits commercial relations with the Borrower's country."
+    ],
+    "follow_up_questions": [
+      "Who are the Eligible Bidders?",
+      "What constitutes a conflict of interest for a bidder?",
+      "What is the policy on Fraud and Corruption?"
+    ]
+  },
+  {
+    "user_question": "What is the purpose of the 'Bidder Information Form'?",
+    "answer": [
+      "The Bidder Information Form is one of the **Bidding Forms** that bidders must complete and submit.",
+      "Its purpose is to provide the Employer with essential information about the bidder, including their legal name, address, and any legal representatives.",
+      "For joint ventures, this form requires information for all members."
+    ],
+    "follow_up_questions": [
+      "What are the specific requirements for a Joint Venture?",
+      "What rules apply to a bidder's nationality?",
+      "What are the key terms used in the bidding document?"
+    ]
+  }
+]
+
+
+[
+  {
+    "user_question": "What are the general eligibility criteria for bidders?",
+    "answer": [
+      "A bidder must meet the nationality requirements in accordance with ITB 4.4.",
+      "They must not have any conflicts of interest as per ITB 4.2.",
+      "Bidders must not have been declared ineligible by the World Bank or the Asian Development Bank.",
+      "They also must not have been excluded as a result of a United Nations resolution or the Borrower's country laws."
+    ],
+    "follow_up_questions": [
+      "What constitutes a conflict of interest for a bidder?",
+      "What are the consequences of being sanctioned by the World Bank or ADB?",
+      "What are the rules regarding the nationality of a bidder?"
+    ]
+  },
+  {
+    "user_question": "What are the rules regarding a bidder's history of non-performance or litigation?",
+    "answer": [
+      "A bidder must not have a history of non-performing contracts due to contractor default since the financial year 2014-15.",
+      "The bidder must not be under suspension based on the execution of a bid/proposal securing declaration by the Employer or withdrawal of the bid within the validity period.",
+      "They must not have a consistent history of court or arbitral awards against them since April 1, 2019."
+    ],
+    "follow_up_questions": [
+      "What is considered a 'non-performing contract'?",
+      "What are the grounds for the forfeiture of a Bid Security?",
+      "What is the process for submitting, modifying, and withdrawing a bid?"
+    ]
+  },
+  {
+    "user_question": "What are the financial requirements for a bidder?",
+    "answer": [
+      "A bidder's financial position and prospective long-term profitability must be sound.",
+      "They must have liquid assets, credit facilities, or solvency certificates of at least Rs. 58.84 Cr.",
+      "Bidders must also demonstrate an available bid capacity that is equal to or more than the total bid value of the work."
+    ],
+    "follow_up_questions": [
+      "How is the bid capacity calculated?",
+      "What happens if a bidder is identified as the lowest bidder (L1) in multiple concurrent tenders?",
+      "What is the purpose of the 'Bid Data Sheet'?"
+    ]
+  },
+  {
+    "user_question": "What is the required general construction and management experience?",
+    "answer": [
+      "The bidder must have satisfactorily completed similar works as a Prime Contractor with a cost of no less than Rs. 117.69 Cr in any one financial year during the last ten financial years (2014-15 to 2023-24).",
+      "The completed works must be in Central/State Government departments, or Central/State Autonomous Bodies, or Central/State Public Sector.",
+      "The value of the completed work will be updated by giving a 10% simple weightage per year to bring them to the current price level (FY 2024-2025)."
+    ],
+    "follow_up_questions": [
+      "How are the costs considered for evaluation if the work was completed as a Joint Venture?",
+      "What is defined as 'Similar Works'?",
+      "What are the key criteria for bid evaluation?"
+    ]
+  },
+  {
+    "user_question": "What are the specific physical quantity requirements?",
+    "answer": [
+      "Bidders must have satisfactorily executed at least 2,968,400 Cum of Earthwork excavation in any one financial year during the last ten financial years.",
+      "They also need to have executed at least 208,800 Sqm of Gabion laying mattress/revetment/stone pitching or equivalent."
+    ],
+    "follow_up_questions": [
+      "What is the purpose of the 'Works Requirements' section?",
+      "What is a 'Bill of Quantities'?",
+      "How is the scope of work defined?"
+    ]
+  },
+  {
+    "user_question": "How is the bid capacity calculated?",
+    "answer": [
+      "The assessed available bid capacity is calculated using the formula: $(A*N*2-B)$.",
+      "A is the maximum value of Civil Engineering works executed in any one financial year during the last ten financial years, with a 10% weightage per year to account for current price levels.",
+      "N is the number of years prescribed for the completion of the work.",
+      "B is the value of existing commitments on ongoing works to be completed during the period of completion of the tendered works."
+    ],
+    "follow_up_questions": [
+      "What happens if a bidder is identified as the lowest bidder (L1) in multiple concurrent tenders?",
+      "What documentation is required to support the calculation of bid capacity?",
+      "What are the financial requirements for a bidder?"
+    ]
+  },
+  {
+    "user_question": "What are the required key critical equipment and key technical personnel?",
+    "answer": [
+      "The bidder must possess a minimum of two Angle Dozers (90 HP), two Water Tankers (8 KL capacity), 34 Shovels (0.85 Cum capacity), 150 Tippers (5 Cum capacity), four Pumps (10 HP), and one Vibratory Roller (8 Tonne).",
+      "They must deploy a Project Manager with a graduate degree in Civil Engineering and at least 20 years of relevant experience.",
+      "Other required personnel include a Dy Project Manager, Manager QS & Billing, Manager QA & QC, Manager Construction safety, Manager Environment & Social Development, Manager Planning, Manager Administration, Senior Site Engineers, Junior Site Engineers, Social and Labour Manager, OHS Manager, and GBV Manager.",
+      "The bidder must submit proof of availability of adequate design and execution engineers, as well as a proposed organization chart and staff deployment schedule."
+    ],
+    "follow_up_questions": [
+      "What are the specific qualifications and experience required for each key technical position?",
+      "What is the C-ESMP and what does it include?",
+      "What is the E&S Performance Security?"
+    ]
+  },
+  {
+    "user_question": "What is the policy on environmental and social past performance?",
+    "answer": [
+      "A bidder must declare any civil work contracts that have been suspended or terminated, or had their performance security called due to non-compliance with any environmental, social, health, or safety requirements in the past ten financial years.",
+      "At the time of contract award, the bidder must not be subject to disqualification by the Bank for non-compliance with Sexual Exploitation and Abuse (SEA) and/or Sexual Harassment (SH) obligations."
+    ],
+    "follow_up_questions": [
+      "What is the E&S Performance Security?",
+      "How can a bidder make a procurement-related complaint?",
+      "What is a C-ESMP and what does it include?"
+    ]
+  },
+  {
+    "user_question": "What constitutes a conflict of interest?",
+    "answer": [
+      "A bidder has a conflict of interest if they have a relative employed in the division or circle in the rank of Assistant Engineer or Assistant Executive Engineer and above, or Divisional Accounts Officer and above.",
+      "Bidders must intimate the names of such persons and furnish a list of Gazetted/Non-Gazetted State Government employees related to them.",
+      "Retired officers of the Govt. of AP or Govt. of India are disqualified from tendering for two years from retirement without prior permission.",
+      "A bidder or employee found to be a retired Gazetted Officer who had not obtained government permission is also disqualified."
+    ],
+    "follow_up_questions": [
+      "What are the new rules on conflicts of interest?",
+      "How can a bidder be disqualified?",
+      "What are the specific requirements for a Joint Venture?"
+    ]
+  },
+  {
+    "user_question": "What is considered a 'non-performing contract'?",
+    "answer": [
+      "Non-performance includes contracts where a non-performance decision by the employer was not challenged by the contractor.",
+      "It also includes contracts that were challenged but were fully settled against the contractor.",
+      "Non-performance does not include contracts where the employer's decision was overruled by the dispute resolution mechanism."
+    ],
+    "follow_up_questions": [
+      "What are the key criteria for bid evaluation?",
+      "What is the process for the opening and evaluation of bids?",
+      "What does 'post-qualification' mean?"
+    ]
+  },
+  {
+    "user_question": "How are the costs considered for evaluation if the work was completed as a Joint Venture?",
+    "answer": [
+      "If the works were carried out as a Prime Contractor of a Joint Venture, the cost considered for evaluation will be the overall cost of the works multiplied by the percentage share of that prime contractor in the JV."
+    ],
+    "follow_up_questions": [
+      "What is defined as 'Similar Works'?",
+      "What are the specific requirements for a Joint Venture?",
+      "What is the role of subcontractors in the bidding process?"
+    ]
+  },
+  {
+    "user_question": "What is defined as 'Similar Works'?",
+    "answer": [
+      "Similar Works means: construction of irrigation projects/large reservoirs/earthwork excavation in major canals in all soils/new tank formations etc. during the last ten financial years."
+    ],
+    "follow_up_questions": [
+      "What is the required general construction and management experience?",
+      "What are the specific physical quantity requirements?",
+      "What is the purpose of the 'Works Requirements' section?"
+    ]
+  },
+  {
+    "user_question": "What documentation is required to support the calculation of bid capacity?",
+    "answer": [
+      "Statements showing the value of existing commitments on ongoing works, as well as the stipulated period of completion remaining, must be certified by a statutory auditor or CA and countersigned by an Engineer in charge."
+    ],
+    "follow_up_questions": [
+      "How is the bid capacity calculated?",
+      "What are the financial requirements for a bidder?",
+      "What are the rules regarding the use of bidding forms?"
+    ]
+  },
+  {
+    "user_question": "What happens if a bidder is identified as the lowest bidder (L1) in multiple concurrent tenders?",
+    "answer": [
+      "The available bid capacity of the bidder will be re-assessed before the opening of the financial bid for the next tender.",
+      "For the bid capacity calculation of the n-th tender, the L1 value of all previous (n-1) tenders where the bidder was the L1 bidder will be considered as part of the bidder's 'existing commitments and on-going works to be completed'."
+    ],
+    "follow_up_questions": [
+      "How is the bid capacity calculated?",
+      "What is the process for the opening and evaluation of bids?",
+      "What are the key criteria for bid evaluation?"
+    ]
+  },
+  {
+    "user_question": "What are the specific qualifications and experience required for each key technical position?",
+    "answer": [
+      "**Project Manager**: Graduate in Civil Engineering with specialization in Project Management, 20 years of experience.",
+      "**Dy Project Manager & Manager QS Billing**: Graduate in Civil Engineering with specialization in Irrigation Engineering or QS & Billing, 15 years of experience.",
+      "**Manager QA & QC / Materials**: Graduate in Civil Engineering with specialization in QA & QC of civil construction works, 15 years of experience.",
+      "**Manager Construction safety**: Graduate in Engineering (civil or environmental) or Master in environmental or related sciences with OHS certification, 10 years of experience.",
+      "**Manager Environment & Social Development**: Environmental and Social (E&S) Specialist with a bachelors' degree in engineering or a master's degree in sciences related to environment management, 10 years of experience.",
+      "**Manager Planning**: Graduate in Civil Engineering with specialization in Project Scheduling, Planning & Monitoring, 10 years of experience.",
+      "**Manager Administration**: Any Graduate with specialization in Office Administration, 10 years of experience.",
+      "**Senior Site Engineers**: Graduate in Civil Engineering with irrigation work experience, 10 years of experience.",
+      "**Junior Site Engineers**: Graduate in Civil Engineering with irrigation work experience, 5 years of experience.",
+      "**Social and Labour Manager**: Master's degree in social sciences or labour management or related fields with relevant experience, 5 years of experience.",
+      "**OHS Manager**: Bachelor in Engineering (civil or environmental) or Master in environmental or related sciences with OHS certification, 5 years of experience.",
+      "**GBV Manager**: Master in environmental or related sciences with GBV/SEA&SH certification, 5 years of experience."
+    ],
+    "follow_up_questions": [
+      "What are the required key critical equipment and key technical personnel?",
+      "What is the E&S Performance Security?",
+      "What is a C-ESMP and what does it include?"
+    ]
+  }
+]
+
+
+[
+  {
+    "user_question": "What were the main topics and decisions from the project kickoff meeting on January 15, 2025?",
+    "answer": [
+      "The kickoff meeting established the project scope, which is 'Roads & Infrastructure for Zone 1A', to be completed over 36 months.",
+      "The financial structure was confirmed, including a 10% advance payment and subsequent milestone-based disbursements.",
+      "Key legal clauses were highlighted, such as the penalty for delays (0.5% per week, max 10%) and the provision for arbitration under the 1996 Act."
+    ],
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the first major deliverable expected from the contractor after the meeting?",
+        "answer": "The contractor was tasked with submitting a detailed execution plan by February 10, 2025."
+      },
+      {
+        "question": "What were the immediate action items for the CRDA?",
+        "answer": "The CRDA Land Department was to confirm the land handover schedule by January 31, 2025, and the finance team was to release the advance payment after the performance guarantee was submitted."
+      },
+      {
+        "question": "What was the purpose of the meeting?",
+        "answer": "The meeting's purpose was to kick off the project and ensure all parties had a clear understanding of the contract and their roles."
+      }
+    ]
+  },
+  {
+    "user_question": "What were the key findings and challenges noted during the technical progress review on July 20, 2025?",
+    "answer": [
+      "The contractor reported 15% project progress, but a 30-day delay was noted due to monsoon rains.",
+      "The Environmental Officer raised a concern about the need for dust suppression to maintain compliance with pollution norms.",
+      "A technical suggestion was made to use pre-cast components to help the contractor regain the lost time."
+    ],
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the contractor required to do to address the delay?",
+        "answer": "The contractor was asked to submit a recovery plan, including an updated Gantt chart, by August 1, 2025."
+      },
+      {
+        "question": "What action was taken regarding the environmental concerns?",
+        "answer": "The Environmental Officer was scheduled to conduct a formal compliance audit by August 15, 2025."
+      },
+      {
+        "question": "When will a decision be made on the extension request?",
+        "answer": "The decision on the contractor's extension request was deferred to the next meeting."
+      }
+    ]
+  },
+  {
+    "user_question": "What was the outcome of the finance and risk review on December 10, 2025, and what new risk was identified?",
+    "answer": [
+      "The contractor achieved the Phase 1 milestone and requested a 20% milestone payment.",
+      "The payment was recommended for release only after the verification of a third-party quality report.",
+      "A new risk of 'contractor over-dependence' was identified, as the contractor holds three additional CRDA contracts."
+    ],
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What steps were planned to manage the identified risk?",
+        "answer": "The risk register was updated to include 'contractor over-dependence,' and monthly monitoring of manpower allocation was instituted to prevent future issues."
+      },
+      {
+        "question": "What was the final directive from the Commissioner?",
+        "answer": "The Commissioner stressed that a maximum of 60 days of slippage would be allowed before penalties are invoked."
+      },
+      {
+        "question": "What is the deadline for the third-party quality report?",
+        "answer": "The third-party consultant is required to submit the quality report by December 20, 2025."
+      }
+    ]
+  },
+  [
+  {
+    "user_question": "What were the main topics and decisions from the project kickoff meeting on January 15, 2025?",
+    "answer": [
+      "The kickoff meeting established the project scope, which is 'Roads & Infrastructure for Zone 1A', to be completed over 36 months.",
+      "The financial structure was confirmed, including a 10% advance payment and subsequent milestone-based disbursements.",
+      "Key legal clauses were highlighted, such as the penalty for delays (0.5% per week, max 10%) and the provision for arbitration under the 1996 Act."
+    ]
+  },
+  {
+    "user_question": "What was the first major deliverable expected from the contractor after the meeting?",
+    "answer": "The contractor was tasked with submitting a detailed execution plan by February 10, 2025."
+  },
+  {
+    "user_question": "What were the immediate action items for the CRDA?",
+    "answer": "The CRDA Land Department was to confirm the land handover schedule by January 31, 2025, and the finance team was to release the advance payment after the performance guarantee was submitted."
+  },
+  {
+    "user_question": "What was the purpose of the meeting?",
+    "answer": "The meeting's purpose was to kick off the project and ensure all parties had a clear understanding of the contract and their roles."
+  },
+  {
+    "user_question": "What were the key findings and challenges noted during the technical progress review on July 20, 2025?",
+    "answer": [
+      "The contractor reported 15% project progress, but a 30-day delay was noted due to monsoon rains.",
+      "The Environmental Officer raised a concern about the need for dust suppression to maintain compliance with pollution norms.",
+      "A technical suggestion was made to use pre-cast components to help the contractor regain the lost time."
+    ]
+  },
+  {
+    "user_question": "What was the contractor required to do to address the delay?",
+    "answer": "The contractor was asked to submit a recovery plan, including an updated Gantt chart, by August 1, 2025."
+  },
+  {
+    "user_question": "What action was taken regarding the environmental concerns?",
+    "answer": "The Environmental Officer was scheduled to conduct a formal compliance audit by August 15, 2025."
+  },
+  {
+    "user_question": "When will a decision be made on the extension request?",
+    "answer": "The decision on the contractor's extension request was deferred to the next meeting."
+  },
+  {
+    "user_question": "What was the outcome of the finance and risk review on December 10, 2025, and what new risk was identified?",
+    "answer": [
+      "The contractor achieved the Phase 1 milestone and requested a 20% milestone payment.",
+      "The payment was recommended for release only after the verification of a third-party quality report.",
+      "A new risk of 'contractor over-dependence' was identified, as the contractor holds three additional CRDA contracts."
+    ]
+  },
+  {
+    "user_question": "What steps were planned to manage the identified risk?",
+    "answer": "The risk register was updated to include 'contractor over-dependence,' and monthly monitoring of manpower allocation was instituted to prevent future issues."
+  },
+  {
+    "user_question": "What was the final directive from the Commissioner?",
+    "answer": "The Commissioner stressed that a maximum of 60 days of slippage would be allowed before penalties are invoked."
+  },
+  {
+    "user_question": "What is the deadline for the third-party quality report?",
+    "answer": "The third-party consultant is required to submit the quality report by December 20, 2025."
+  },
+  {
+    "user_question": "What were the primary topics and decisions made during the project kickoff meeting on January 15, 2025?",
+    "answer": "The main topics were the project scope, which is the 'Roads & Infrastructure for Zone 1A' project over 36 months, the financial structure (10% advance, milestone-based payments), and key legal clauses, including a penalty for delays."
+  },
+  {
+    "user_question": "What was the legal penalty for project delays?",
+    "answer": "The penalty is 0.5% per week of delay, with a maximum penalty of 10%."
+  },
+  {
+    "user_question": "What was the contractor's main request at the meeting?",
+    "answer": "The contractor requested clarification on the land handover schedule from CRDA."
+  },
+  {
+    "user_question": "What was the first action item for the CRDA's Finance team?",
+    "answer": "The finance team was tasked with releasing the 10% advance payment after the contractor submitted the performance guarantee."
+  },
+  {
+    "user_question": "How did the project's progress stand as of the July 20, 2025 technical review meeting?",
+    "answer": "The contractor reported 15% progress, which was 30 days behind schedule due to monsoon rains. The contractor requested a schedule extension."
+  },
+  {
+    "user_question": "What was the technical suggestion to help the project recover the delay?",
+    "answer": "The Project Supervision Consultant suggested the use of pre-cast components to recover the schedule slippage."
+  },
+  {
+    "user_question": "What environmental concern was raised?",
+    "answer": "The Environmental Officer flagged the need for better dust suppression to comply with pollution norms."
+  },
+  {
+    "user_question": "What was the next step for the contractor after the review?",
+    "answer": "The contractor was instructed to submit a recovery plan with an updated Gantt chart by August 1, 2025."
+  },
+  {
+    "user_question": "What new risk was identified during the finance and risk review on December 10, 2025?",
+    "answer": "A new risk of 'contractor over-dependence' was identified. The Legal Advisor noted that the contractor, XYZ Infra, held three other contracts with CRDA, raising concerns about potential over-commitment."
+  },
+  {
+    "user_question": "What specific action was taken to manage this risk?",
+    "answer": "The risk register was updated to include this risk, and monthly monitoring of the contractor's manpower allocation was implemented."
+  },
+  {
+    "user_question": "What did the Commissioner state regarding project timelines?",
+    "answer": "The Commissioner emphasized that no more than 60 days of slippage would be allowed without invoking penalties."
+  },
+  {
+    "user_question": "What milestone was achieved by the contractor at this point?",
+    "answer": "The contractor had achieved the Phase 1 milestone and requested a 20% milestone payment."
+  },
+  {
+    "user_question": "What was the payment process for the Phase 1 milestone?",
+    "answer": "The Finance Officer recommended releasing the 20% milestone payment only after a third-party quality report was verified."
+  },
+  {
+    "user_question": "When was the third-party quality report due?",
+    "answer": "The quality report was required to be submitted by December 20, 2025."
+  },
+  {
+    "user_question": "Who was responsible for processing the payment?",
+    "answer": "The Finance Officer was responsible for processing the payment after the quality report was approved."
+  },
+  {
+    "user_question": "What does this payment process indicate about the project's quality control?",
+    "answer": "It shows a strong emphasis on quality assurance, requiring external verification before financial disbursements."
+  },
+  {
+    "user_question": "What was the contractor's first major deliverable after the kickoff meeting and what was its due date?",
+    "answer": "The contractor's first major deliverable was to share a detailed execution plan by February 10, 2025."
+  },
+  {
+    "user_question": "What information did the contractor need to receive before submitting the plan?",
+    "answer": "The contractor needed clarity on the land handover schedule from CRDA."
+  },
+  {
+    "user_question": "What was the overall project duration?",
+    "answer": "The project was phased over 36 months."
+  },
+  {
+    "user_question": "What was the project named?",
+    "answer": "The project was named 'Roads & Infrastructure for Zone 1A'."
+  },
+  {
+    "user_question": "What were the roles of the Chief Engineer and Finance Officer in the first meeting?",
+    "answer": "The Chief Engineer reviewed the scope of the project, while the Finance Officer confirmed the payment structure, including the 10% advance and milestone-based disbursements."
+  },
+  {
+    "user_question": "Who chaired the kickoff meeting?",
+    "answer": "The Commissioner chaired the kickoff meeting."
+  },
+  {
+    "user_question": "What did the Commissioner emphasize?",
+    "answer": "The Commissioner emphasized timely delivery and compliance with APCRDA quality standards."
+  },
+  {
+    "user_question": "What was the purpose of the Legal Advisor's presence?",
+    "answer": "The Legal Advisor highlighted key contract clauses, such as the penalty for delays and the arbitration process."
+  },
+  {
+    "user_question": "What was the specific action item for the Environmental Officer?",
+    "answer": "The Environmental Officer was tasked with conducting a compliance audit by August 15, 2025, after flagging the need for dust suppression."
+  },
+  {
+    "user_question": "What type of pollution was the main concern?",
+    "answer": "The main concern was dust pollution."
+  },
+  {
+    "user_question": "Was the audit a part of a larger plan?",
+    "answer": "Yes, the audit was a part of addressing the technical progress review's findings and ensuring the contractor complies with environmental norms."
+  },
+  {
+    "user_question": "What was the status of the project at the time of the audit's scheduling?",
+    "answer": "The project was at 15% completion and 30 days behind schedule."
+  },
+  {
+    "user_question": "What was the status of the contractor's request for an extension and when was the decision expected?",
+    "answer": "The contractor requested an extension for the 30-day delay caused by monsoon rains, and the CRDA decided to make a decision on the request in the next meeting."
+  },
+  {
+    "user_question": "What was the reason for the delay?",
+    "answer": "The delay was specifically attributed to monsoon rains."
+  },
+  {
+    "user_question": "Did the contractor provide a plan to mitigate the delay?",
+    "answer": "Yes, the contractor was asked to submit a recovery plan with an updated Gantt chart."
+  },
+  {
+    "user_question": "What was the project's progress at the time of this request?",
+    "answer": "The project was at 15% completion."
+  },
+  {
+    "user_question": "What was the purpose of the third-party quality report and when was it due?",
+    "answer": "The third-party quality report was required to verify the quality of the completed Phase 1 milestone before the 20% milestone payment could be released. It was due by December 20, 2025."
+  },
+  {
+    "user_question": "What happens after the report is submitted?",
+    "answer": "The Finance Officer will process the payment after the report is approved."
+  },
+  {
+    "user_question": "What does this show about the project management style?",
+    "answer": "It shows a cautious and quality-focused approach to financial management."
+  },
+  {
+    "user_question": "What was the role of the Finance Officer?",
+    "answer": "The Finance Officer recommended the quality report and was responsible for the payment process."
+  },
+  {
+    "user_question": "What was the final outcome of the December 10, 2025 meeting?",
+    "answer": "The meeting resulted in a conditional approval of the milestone payment, the identification of a new risk of 'contractor over-dependence,' and a strict directive from the Commissioner on project timelines and penalties."
+  },
+  {
+    "user_question": "What was the date of the next scheduled review?",
+    "answer": "The next review was scheduled for March 15, 2026."
+  },
+  {
+    "user_question": "What was the main action item for the project team?",
+    "answer": "The team was tasked with including 'contractor over-dependence' in the risk register and monitoring manpower monthly."
+  },
+  {
+    "user_question": "What did the Commissioner's directive imply?",
+    "answer": "It implied that the project was nearing a critical phase, and further delays would not be tolerated without financial consequences."
+  }
+]
+
+
+
+]
+
+
+[
+  {
+    "question": "What were the primary topics and decisions made during the project kickoff meeting on January 15, 2025?",
+    "answer": "The main topics were the project scope, which is the 'Roads & Infrastructure for Zone 1A' project over 36 months, the financial structure (10% advance, milestone-based payments), and key legal clauses, including a penalty for delays.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the legal penalty for project delays?",
+        "answer": "The penalty is 0.5% per week of delay, with a maximum penalty of 10%."
+      },
+      {
+        "question": "What was the contractor's main request at the meeting?",
+        "answer": "The contractor requested clarification on the land handover schedule from CRDA."
+      },
+      {
+        "question": "What was the first action item for the CRDA's Finance team?",
+        "answer": "The finance team was tasked with releasing the 10% advance payment after the contractor submitted the performance guarantee."
+      }
+    ]
+  },
+  {
+    "question": "How did the project's progress stand as of the July 20, 2025 technical review meeting?",
+    "answer": "The contractor reported 15% progress, which was 30 days behind schedule due to monsoon rains. The contractor requested a schedule extension.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the technical suggestion to help the project recover the delay?",
+        "answer": "The Project Supervision Consultant suggested the use of pre-cast components to recover the schedule slippage."
+      },
+      {
+        "question": "What environmental concern was raised?",
+        "answer": "The Environmental Officer flagged the need for better dust suppression to comply with pollution norms."
+      },
+      {
+        "question": "What was the next step for the contractor after the review?",
+        "answer": "The contractor was instructed to submit a recovery plan with an updated Gantt chart by August 1, 2025."
+      }
+    ]
+  },
+  {
+    "question": "What new risk was identified during the finance and risk review on December 10, 2025?",
+    "answer": "A new risk of 'contractor over-dependence' was identified. The Legal Advisor noted that the contractor, XYZ Infra, held three other contracts with CRDA, raising concerns about potential over-commitment.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What specific action was taken to manage this risk?",
+        "answer": "The risk register was updated to include this risk, and monthly monitoring of the contractor's manpower allocation was implemented."
+      },
+      {
+        "question": "What did the Commissioner state regarding project timelines?",
+        "answer": "The Commissioner emphasized that no more than 60 days of slippage would be allowed without invoking penalties."
+      },
+      {
+        "question": "What milestone was achieved by the contractor at this point?",
+        "answer": "The contractor had achieved the Phase 1 milestone and requested a 20% milestone payment."
+      }
+    ]
+  },
+  {
+    "question": "What was the payment process for the Phase 1 milestone?",
+    "answer": "The Finance Officer recommended releasing the 20% milestone payment only after a third-party quality report was verified.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "When was the third-party quality report due?",
+        "answer": "The quality report was required to be submitted by December 20, 2025."
+      },
+      {
+        "question": "Who was responsible for processing the payment?",
+        "answer": "The Finance Officer was responsible for processing the payment after the quality report was approved."
+      },
+      {
+        "question": "What does this payment process indicate about the project's quality control?",
+        "answer": "It shows a strong emphasis on quality assurance, requiring external verification before financial disbursements."
+      }
+    ]
+  },
+  {
+    "question": "What was the contractor's first major deliverable after the kickoff meeting and what was its due date?",
+    "answer": "The contractor's first major deliverable was to share a detailed execution plan by February 10, 2025.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What information did the contractor need to receive before submitting the plan?",
+        "answer": "The contractor needed clarity on the land handover schedule from CRDA."
+      },
+      {
+        "question": "What was the overall project duration?",
+        "answer": "The project was phased over 36 months."
+      },
+      {
+        "question": "What was the project named?",
+        "answer": "The project was named 'Roads & Infrastructure for Zone 1A'."
+      }
+    ]
+  },
+  {
+    "question": "What were the roles of the Chief Engineer and Finance Officer in the first meeting?",
+    "answer": "The Chief Engineer reviewed the scope of the project, while the Finance Officer confirmed the payment structure, including the 10% advance and milestone-based disbursements.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "Who chaired the kickoff meeting?",
+        "answer": "The Commissioner chaired the kickoff meeting."
+      },
+      {
+        "question": "What did the Commissioner emphasize?",
+        "answer": "The Commissioner emphasized timely delivery and compliance with APCRDA quality standards."
+      },
+      {
+        "question": "What was the purpose of the Legal Advisor's presence?",
+        "answer": "The Legal Advisor highlighted key contract clauses, such as the penalty for delays and the arbitration process."
+      }
+    ]
+  },
+  {
+    "question": "What was the specific action item for the Environmental Officer?",
+    "answer": "The Environmental Officer was tasked with conducting a compliance audit by August 15, 2025, after flagging the need for dust suppression.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What type of pollution was the main concern?",
+        "answer": "The main concern was dust pollution."
+      },
+      {
+        "question": "Was the audit a part of a larger plan?",
+        "answer": "Yes, the audit was a part of addressing the technical progress review's findings and ensuring the contractor complies with environmental norms."
+      },
+      {
+        "question": "What was the status of the project at the time of the audit's scheduling?",
+        "answer": "The project was at 15% completion and 30 days behind schedule."
+      }
+    ]
+  },
+  {
+    "question": "What was the status of the contractor's request for an extension and when was the decision expected?",
+    "answer": "The contractor requested an extension for the 30-day delay caused by monsoon rains, and the CRDA decided to make a decision on the request in the next meeting.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the reason for the delay?",
+        "answer": "The delay was specifically attributed to monsoon rains."
+      },
+      {
+        "question": "Did the contractor provide a plan to mitigate the delay?",
+        "answer": "Yes, the contractor was asked to submit a recovery plan with an updated Gantt chart."
+      },
+      {
+        "question": "What was the project's progress at the time of this request?",
+        "answer": "The project was at 15% completion."
+      }
+    ]
+  },
+  {
+    "question": "What was the purpose of the third-party quality report and when was it due?",
+    "answer": "The third-party quality report was required to verify the quality of the completed Phase 1 milestone before the 20% milestone payment could be released. It was due by December 20, 2025.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What happens after the report is submitted?",
+        "answer": "The Finance Officer will process the payment after the report is approved."
+      },
+      {
+        "question": "What does this show about the project management style?",
+        "answer": "It shows a cautious and quality-focused approach to financial management."
+      },
+      {
+        "question": "What was the role of the Finance Officer?",
+        "answer": "The Finance Officer recommended the quality report and was responsible for the payment process."
+      }
+    ]
+  },
+  {
+    "question": "What was the final outcome of the December 10, 2025 meeting?",
+    "answer": "The meeting resulted in a conditional approval of the milestone payment, the identification of a new risk of 'contractor over-dependence,' and a strict directive from the Commissioner on project timelines and penalties.",
+    "follow_up_questions_and_answers": [
+      {
+        "question": "What was the date of the next scheduled review?",
+        "answer": "The next review was scheduled for March 15, 2026."
+      },
+      {
+        "question": "What was the main action item for the project team?",
+        "answer": "The team was tasked with including 'contractor over-dependence' in the risk register and monitoring manpower monthly."
+      },
+      {
+        "question": "What did the Commissioner's directive imply?",
+        "answer": "It implied that the project was nearing a critical phase, and further delays would not be tolerated without financial consequences."
+      }
+    ]
+  }
+]
+

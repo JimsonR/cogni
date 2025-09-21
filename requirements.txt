@@ -1,0 +1,16 @@
+# Core dependencies
+pymongo==4.6.0
+openai
+python-dotenv==1.0.0
+tiktoken==0.7.0
+
+# FastAPI and API dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Data processing
+numpy==1.24.3
+
+# Additional utilities
+requests==2.31.0
